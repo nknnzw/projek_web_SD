@@ -6,13 +6,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>website</title>
+  <title>SD N RAU</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{asset('style/assets/img/favicon.png')}}"rel="icon">
-  <link href="{{asset('style/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+  <link href="{{asset('style/assets/img/favicon.jpg')}}"rel="icon">
+  <link href="{{asset('style/assets/img/apple-touch-icon.jpg')}}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -40,37 +40,22 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html">Selecao</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <h1 style="display: flex; align-items: center;">
+          <img src="{{asset('style/assets/img/logosd.png')}}" alt="Deskripsi Gambar" style="margin-right: 10px;"> <!-- Ubah 'gambar.jpg' dengan URL atau path ke gambar yang ingin Anda tambahkan -->
+          <a href="index.html" style="text-decoration: none;">SD Negeri RAU</a>
+        </h1>
       </div>
+      
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
+          <li><a class="nav-link scrollto" href="#services">Jadwal</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Ekstrakulikuler</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Struktur</a></li>
+          <li><a class="nav-link scrollto" href="#team">Guru</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -85,27 +70,27 @@
       <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Selecao</span></h2>
-          <p class="animate__animated fanimate__adeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          <h2 class="animate__animated animate__fadeInDown">Selamat Datang di <span>SD Negeri Rau</span></h2>
+          <p class="animate__animated fanimate__adeInUp">Temukan informasi terbaru tentang kegiatan sekolah dan program pendidikan kami yang inovatif. Mari bersama-sama menciptakan masa depan cerah untuk generasi penerus di SD N Rau.</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lebih Lanjut</a>
         </div>
       </div>
 
       <!-- Slide 2 -->
       <div class="carousel-item">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-          <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          <h2 class="animate__animated animate__fadeInDown">Selamat Datang di <span>SD Negeri Rau</span></h2>
+          <p class="animate__animated fanimate__adeInUp">Temukan informasi terbaru tentang kegiatan sekolah dan program pendidikan kami yang inovatif. Mari bersama-sama menciptakan masa depan cerah untuk generasi penerus di SD N Rau.</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lebih Lanjut</a>
         </div>
       </div>
 
       <!-- Slide 3 -->
       <div class="carousel-item">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-          <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          <h2 class="animate__animated animate__fadeInDown">Selamat Datang di <span>SD Negeri Rau</span></h2>
+          <p class="animate__animated fanimate__adeInUp">Temukan informasi terbaru tentang kegiatan sekolah dan program pendidikan kami yang inovatif. Mari bersama-sama menciptakan masa depan cerah untuk generasi penerus di SD N Rau.</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lebih Lanjut</a>
         </div>
       </div>
 
@@ -143,526 +128,209 @@
       <div class="container">
 
         <div class="section-title" data-aos="zoom-out">
-          <h2>About</h2>
-          <p>Who we are</p>
+          <h2>Tentang Kami</h2>
+          <p>Visi Misi & Tujuan</p>
         </div>
 
         <div class="row content" data-aos="fade-up">
-          <div class="col-lg-6">
+          <div class="col-lg-11">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              Visi
             </p>
+            <p>“Terbentuknya peserta didik yang beriman, bertaqwa, cerdas, terampil, berbudi luhur, serta berbudaya hidup bersih dan sehat”</p>
+            <p>Misi</p>
             <ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li><i class="ri-check-double-line"></i> Menanamkan perilaku yang sesuai dengan Aqidah dan norma agama</li>
+              <li><i class="ri-check-double-line"></i> Menanamkan perilaku, berbudi luhur dan berakhlak mulia</li>
+              <li><i class="ri-check-double-line"></i> Melaksanakan proses pembelajaran yang efektif dan efisien</li>
+              <li><i class="ri-check-double-line"></i> Memberikan bekal keterampilan untuk kehidupan di masa mendatang</li>
+              <li><i class="ri-check-double-line"></i> Membiasakan perilaku hidup bersih pada pribadi dan lingkungan</li>
+              <li><i class="ri-check-double-line"></i> Membiasakan perilaku hidup sehat untuk pribadi dan lingkungan</li>
+            </ul>
+            <p>Tujuan</p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Menjadikan siswa didik yang kreatif, inovatif, cerdas, trampil, serta tanggung jawab</li>
+              <li><i class="ri-check-double-line"></i> Menjadikan siswa bertingkah laku ramah, beriman dan bertaqwa berbudi pekerti luhur berkepribadian Indonesia</li>
+              <li><i class="ri-check-double-line"></i> Menjadikan siswa mampu melanjutkan pendidikan kejenjang selanjutnya</li>
             </ul>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <a href="#" class="btn-learn-more">Learn More</a>
-          </div>
+          
         </div>
 
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
-      <div class="container">
-
-        <ul class="nav nav-tabs row d-flex">
-          <li class="nav-item col-3" data-aos="zoom-in">
-            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
-              <i class="ri-gps-line"></i>
-              <h4 class="d-none d-lg-block">Modi sit est dela pireda nest</h4>
-            </a>
-          </li>
-          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
-            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
-              <i class="ri-body-scan-line"></i>
-              <h4 class="d-none d-lg-block">Unde praesenti mara setra le</h4>
-            </a>
-          </li>
-          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="200">
-            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
-              <i class="ri-sun-line"></i>
-              <h4 class="d-none d-lg-block">Pariatur explica nitro dela</h4>
-            </a>
-          </li>
-          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="300">
-            <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
-              <i class="ri-store-line"></i>
-              <h4 class="d-none d-lg-block">Nostrum qui dile node</h4>
-            </a>
-          </li>
-        </ul>
-
-        <div class="tab-content" data-aos="fade-up">
-          <div class="tab-pane active show" id="tab-1">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p>
-                <ul>
-                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                </ul>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
-                </p>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-1.png" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane" id="tab-2">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Neque exercitationem debitis soluta quos debitis quo mollitia officia est</h3>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
-                </p>
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p>
-                <ul>
-                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="ri-check-double-line"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                </ul>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-2.png" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane" id="tab-3">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Voluptatibus commodi ut accusamus ea repudiandae ut autem dolor ut assumenda</h3>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
-                </p>
-                <ul>
-                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="ri-check-double-line"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-                </ul>
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-3.png" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane" id="tab-4">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Omnis fugiat ea explicabo sunt dolorum asperiores sequi inventore rerum</h3>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
-                </p>
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
-                </p>
-                <ul>
-                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                </ul>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-4.png" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Features Section -->
-
+    
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
       <div class="container">
 
         <div class="row" data-aos="zoom-out">
           <div class="col-lg-9 text-center text-lg-start">
-            <h3>Call To Action</h3>
-            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>ALamat Sekolah</h3>
+            <p> Jln. Balai Desa Rau RT.01 RW.03 Kecamatan Kedung, Kabupaten Jepara, 59463.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
+            <a class="cta-btn align-middle" href="#">Email: sd_negeri_rau@yahoo.co.id</a>
           </div>
         </div>
 
       </div>
     </section><!-- End Cta Section -->
 
-    <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container">
-
+    
         <div class="section-title" data-aos="zoom-out">
-          <h2>Services</h2>
-          <p>What we do offer</p>
+          <h2>Jadwal Pelajaran</h2>
+          <p>Jadwal Belajar Mengajar Kelas 1-6</p>
         </div>
-
+    
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="icon-box" data-aos="zoom-in-left">
-              <div class="icon"><i class="bi bi-briefcase" style="color: #ff689b;"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <img src="{{asset('style/assets/img/jadwal/1.png')}}" alt="Deskripsi Gambar" style="max-width: 100%; height: auto;">
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
-            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="100">
-              <div class="icon"><i class="bi bi-book" style="color: #e9bf06;"></i></div>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+    
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="zoom-in-left">
+              <img src="{{asset('style/assets/img/jadwal/2.png')}}" alt="Deskripsi Gambar" style="max-width: 100%; height: auto;">
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
-            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
-              <div class="icon"><i class="bi bi-card-checklist" style="color: #3fcdc7;"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mt-5">
-            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="300">
-              <div class="icon"><i class="bi bi-binoculars" style="color:#41cf2e;"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-5">
-            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="400">
-              <div class="icon"><i class="bi bi-globe" style="color: #d6ff22;"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mt-5">
-            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="500">
-              <div class="icon"><i class="bi bi-clock" style="color: #4680ff;"></i></div>
-              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+    
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="zoom-in-left">
+              <img src="{{asset('style/assets/img/jadwal/3.png')}}" alt="Deskripsi Gambar" style="max-width: 100%; height: auto;">
             </div>
           </div>
         </div>
-
+    
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="zoom-in-left">
+              <img src="{{asset('style/assets/img/jadwal/4.png')}}" alt="Deskripsi Gambar" style="max-width: 100%; height: auto;">
+            </div>
+          </div>
+    
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="zoom-in-left">
+              <img src="{{asset('style/assets/img/jadwal/5.png')}}" alt="Deskripsi Gambar" style="max-width: 100%; height: auto;">
+            </div>
+          </div>
+    
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="zoom-in-left">
+              <img src="{{asset('style/assets/img/jadwal/6.png')}}" alt="Deskripsi Gambar" style="max-width: 100%; height: auto;">
+            </div>
+          </div>
+        </div>
       </div>
-    </section><!-- End Services Section -->
-
+    </section>
+    
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container">
 
         <div class="section-title" data-aos="zoom-out">
-          <h2>Portfolio</h2>
-          <p>What we've done</p>
+          <h2>Ekstrakulikuler</h2>
+          <p>Dokumentasi Kegiatan Ekstrakulikuler</p>
         </div>
 
         <ul id="portfolio-flters" class="d-flex justify-content-end" data-aos="fade-up">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">App</li>
-          <li data-filter=".filter-card">Card</li>
-          <li data-filter=".filter-web">Web</li>
+          <li data-filter="*" class="filter-active">Ekstrakulikuler Pramuka</li>
+          <li data-filter="*" class="filter-active">Ekstrakulikuler Tari</li>
+          
         </ul>
 
         <div class="row portfolio-container" data-aos="fade-up">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="{{asset('style/assets/img/dokumentasi/pra1.jpg')}}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <h4>Ekstrakulikuler</h4>
+              <p>Ekstrakulikuler Pramuka</p>
+              <a href="{{asset('style/assets/img/dokumentasi/pra1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Ekstrakulikuler Pramuka"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="{{asset('style/assets/img/dokumentasi/pra2.jpg')}}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <h4>Ekstrakulikuler</h4>
+              <p>Ekstrakulikuler Pramuka</p>
+              <a href="{{asset('style/assets/img/dokumentasi/pra2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Ekstrakulikuler Pramuka"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="{{asset('style/assets/img/dokumentasi/pra3.jpg')}}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <h4>Ekstrakulikuler</h4>
+              <p>Ekstrakulikuler Pramuka</p>
+              <a href="{{asset('style/assets/img/dokumentasi/pra3.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Ekstrakulikuler Pramuka"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="{{asset('style/assets/img/dokumentasi/tar1.jpg')}}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <h4>Ekstrakulikuler </h4>
+              <p>Ekstrakulikuler Tari</p>
+              <a href="{{asset('style/ assets/img/dokumentasi/tar1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Ekstrakulikuler Tari"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="{{asset('style/assets/img/dokumentasi/tar2.jpg')}}" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <h4>Ekstrakulikuler</h4>
+              <p>Ekstrakulikuler Tari</p>
+              <a href="{{asset('style/assets/img/dokumentasi/tar2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Ekstrakulikuler Tari"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
-
-        </div>
-
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="{{asset('style/assets/img/dokumentasi/tar3.jpg')}}" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Ekstrakulikuler</h4>
+              <p>Ekstrakulikuler Tari</p>
+              <a href="{{asset('style/assets/img/dokumentasi/tar3.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Ekstrakulikuler Tari"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
       </div>
     </section><!-- End Portfolio Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container">
-
-        <div class="section-title" data-aos="zoom-out">
-          <h2>Testimonials</h2>
-          <p>What they are saying about us</p>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
 
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing">
       <div class="container">
-
+    
         <div class="section-title" data-aos="zoom-out">
-          <h2>Pricing</h2>
-          <p>Our Competing Prices</p>
+          <h2>Struktur</h2>
+          <p>Struktur Organisasi Sekolah</p>
         </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="box" data-aos="zoom-in">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
+        <div class="row portfolio-container" data-aos="fade-up">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img" style="text-align: center;"> <!-- Tambahkan style untuk mengatur gambar menjadi besar dan berada di tengah -->
+              <img src="{{asset('style/assets/img/dokumentasi/struktur.png')}}" class="img-fluid" style="width: 100%; max-width: 100%; height: auto; max-height: 100vh;" alt="">  <!-- Ubah kelas untuk ukuran gambar -->
+            </div>
+            <div class="portfolio-info">
+              <h4>Struktur</h4>
+              <p>Struktur Organisasi SD N Rau</p>
+              <a href="{{asset('style/assets/img/dokumentasi/struktur.png')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Struktur Organinasi SD N Rau"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
-            <div class="box featured" data-aos="zoom-in" data-aos-delay="100">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="200">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="300">
-              <span class="advanced">Advanced</span>
-              <h3>Ultimate</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
         </div>
-
       </div>
     </section><!-- End Pricing Section -->
+    
 
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq">
@@ -670,65 +338,39 @@
 
         <div class="section-title" data-aos="zoom-out">
           <h2>F.A.Q</h2>
-          <p>Frequently Asked Questions</p>
+          <p>Pertanyaan yang sering ditanyakan</p>
         </div>
 
         <ul class="faq-list">
 
           <li>
-            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Di mana alamat SD Negeri Rau? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
             <div id="faq1" class="collapse" data-bs-parent=".faq-list">
               <p>
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                Jln. Balai Desa Rau RT.01 RW.03 Kecamatan Kedung, Kabupaten Jepara, 59463.
               </p>
             </div>
           </li>
 
           <li>
-            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Apa akreditasi SD Negeri Rau? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
             <div id="faq2" class="collapse" data-bs-parent=".faq-list">
               <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                SD Negeri Rau mendapatkan status akreditasi A dari BAN-S/M (Badan Akreditasi Nasional) Sekolah/Madrasah.
               </p>
             </div>
           </li>
 
           <li>
-            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Siapa nama kepala sekolah SD Negeri Rau? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
             <div id="faq3" class="collapse" data-bs-parent=".faq-list">
               <p>
-                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                SD Negeri Rau dipimpin oleh kepala sekolah bernama Kasan.
               </p>
             </div>
           </li>
 
-          <li>
-            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-              </p>
-            </div>
-          </li>
-
+         
         </ul>
 
       </div>
@@ -739,8 +381,8 @@
       <div class="container">
 
         <div class="section-title" data-aos="zoom-out">
-          <h2>Team</h2>
-          <p>Our Hardworking Team</p>
+          <h2>Guru</h2>
+          <p>Daftar Guru SD N Rau</p>
         </div>
 
         <div class="row">
@@ -822,80 +464,56 @@
       </div>
     </section><!-- End Team Section -->
 
-    <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
-
+    
         <div class="section-title" data-aos="zoom-out">
-          <h2>Contact</h2>
-          <p>Contact Us</p>
+          <h2>Kontak</h2>
+          <p>Kontak Kami</p>
         </div>
-
+    
         <div class="row mt-5">
-
           <div class="col-lg-4" data-aos="fade-right">
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <h4>Lokasi</h4>
+                <p>Jln. Balai Desa Rau RT.01 RW.03 Kecamatan Kedung, Kabupaten Jepara, 59463</p>
               </div>
-
+    
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>SD_Negeri_Rau@yahoo.co.id</p>
               </div>
-
+    
               <div class="phone">
                 <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <h4>Telepon:</h4>
+                <p>+62 8233230003</p>
               </div>
-
             </div>
-
           </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
+    
+          <div class="col-lg-8 col-md-6" data-aos="fade-left">
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15813.196829701592!2d110.678351!3d-6.596741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e700a19c587cfc1%3A0x18a1f334967c45d8!2sJln.%20Balai%20Desa%20Rau%20RT.01%20RW.03%2C%20Kecamatan%20Kedung%2C%20Kabupaten%20Jepara%2C%20Jawa%20Tengah%2C%2059463!5e0!3m2!1sen!2sid!4vYOUR_EMBED_API_KEY" frameborder="0" style="width: 100%; height: 400px; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
           </div>
-
-        </div>
-
+          
+    
       </div>
-    </section><!-- End Contact Section -->
+    </section>
+    
+    
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>Selecao</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <h3>SD N Rau</h3>
+      <p>Temukan informasi terbaru tentang kegiatan sekolah dan program pendidikan kami yang inovatif. Mari bersama-sama menciptakan masa depan cerah untuk generasi penerus di SD N Rau.</p>
       <div class="social-links">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -904,14 +522,14 @@
         <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
       <div class="copyright">
-        &copy; Copyright <strong><span>Selecao</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Niken Nazwa</span></strong>.
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/selecao-bootstrap-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+       
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -927,7 +545,7 @@
   <script src="{{asset('style/assets/vendor/php-email-form/validate.js')}}"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{asset('style/assets/js/main.js')}} "></script>
 
 </body>
 

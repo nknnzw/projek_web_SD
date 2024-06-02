@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\sdController;
 
@@ -12,16 +13,24 @@ Route::get('home', function () {
 Route::get('dash', function () {
     return view('adminn');
 });
-Route::controller(sdController::class)->group(function() {
+
+Route::middleware('auth')->group(function () {
+    Route::get('dash', function () {
+        return view('adminn');
+    })->name("dashboard");
+});
+
+
+Route::controller(sdController::class)->group(function () {
     Route::get('/tabelGuru', 'tableGuru')->name('tabelGuru');
 });
 
-Route::get('/login', [AuthController::class,'login'])->name('login');
-Route::post('/login', [AuthController::class,'authenticate'])->name('auth.authenticate');
+Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::post('/login', [AuthController::class, 'authenticate'])->name('auth.authenticate');
 
 //register
-Route::get('/register', [AuthController::class,'register'])->name('auth.register');
-Route::post('/register', [AuthController::class,'store'])->name('auth.store');
+Route::get('/register', [AuthController::class, 'register'])->name('auth.register');
+Route::post('/register', [AuthController::class, 'store'])->name('auth.store');
 
 //logout
-Route::post('/logout', [AuthController::class,'logout'])->name('auth.logout');
+Route::post('/logout', [AuthController::class, 'logout'])->name('auth.logout');

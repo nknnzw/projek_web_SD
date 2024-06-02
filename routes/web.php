@@ -2,14 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\sdController;
+use App\Http\Controllers\AuthController;
 
 Route::get('/', function () {
     return view('main');
 });
-Route::get('home', function () {
+Route::get('/home', function () {
     return view('main');
 });
-Route::get('dash', function () {
+Route::get('/dash', function () {
     return view('adminn');
 });
 Route::controller(sdController::class)->group(function() {

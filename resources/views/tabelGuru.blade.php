@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +15,9 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="{{ asset('admin/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -527,49 +528,52 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Datatables</h5>
-              <p>Add lightweight datatables to your project with using the <a href="https://github.com/fiduswriter/Simple-DataTables" target="_blank">Simple DataTables</a> library. Just add <code>.datatable</code> class name to any table you wish to conver to a datatable. Check for <a href="https://fiduswriter.github.io/simple-datatables/demos/" target="_blank">more examples</a>.</p>
-    <div class="container">
-        <h2>Daftar Guru</h2>
-        <a href="{{ route('storeGuru') }}">Tambah Guru</a>
-        @if (session('success'))
-            <div>{{ session('success') }}</div>
-        @endif
-        <table>
-            <thead>
-                <tr>
-                    <th>Gambar</th>
-                    <th>Nama</th>
-                    <th>NIP</th>
-                    <th>Tanggal Lahir</th>
-                    <th>Jenis Kelamin</th>
-                    <th>Jabatan</th>
-                    <th>Status Kepegawaian</th>
-                    <th>Aksi</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach ($posts as $post)
+              <p>Add lightweight datatables to your project with using the <a
+                  href="https://github.com/fiduswriter/Simple-DataTables" target="_blank">Simple DataTables</a> library.
+                Just add <code>.datatable</code> class name to any table you wish to conver to a datatable. Check for <a
+                  href="https://fiduswriter.github.io/simple-datatables/demos/" target="_blank">more examples</a>.</p>
+              <div class="container">
+                <h2>Daftar Guru</h2>
+                <a href="{{ route('tabelGuru-add') }}">Tambah Guru</a>
+                @if (session('success'))
+                <div>{{ session('success') }}</div>
+                @endif
+                <table>
+                  <thead>
                     <tr>
-                        <td>{{ $post->gambar }}</td>
-                        <td>{{ $post->nama }}</td>
-                        <td>{{ $post->nip }}</td>
-                        <td>{{ $post->tanggal_lahir }}</td>
-                        <td>{{ $post->jenis_kelamin }}</td>
-                        <td>{{ $post->jabatan }}</td>
-                        <td>{{ $post->status_kepegawaian }}</td>
-                        <td>
-                            <a href="{{ route('edit-guru', $post->id) }}">Edit</a>
-                            <form action="{{ route('delete-guru', $post->id) }}" method="POST" style="display:inline">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit">Delete</button>
-                            </form>
-                        </td>
+                      <th>Gambar</th>
+                      <th>Nama</th>
+                      <th>NIP</th>
+                      <th>Tanggal Lahir</th>
+                      <th>Jenis Kelamin</th>
+                      <th>Jabatan</th>
+                      <th>Status Kepegawaian</th>
+                      <th>Aksi</th>
                     </tr>
-                @endforeach
-            </tbody>
-        </table>
-    </div>
+                  </thead>
+                  <tbody>
+                    @foreach ($posts as $post)
+                    <tr>
+                      <td>{{ $post->gambar }}</td>
+                      <td>{{ $post->nama }}</td>
+                      <td>{{ $post->nip }}</td>
+                      <td>{{ $post->tanggal_lahir }}</td>
+                      <td>{{ $post->jenis_kelamin }}</td>
+                      <td>{{ $post->jabatan }}</td>
+                      <td>{{ $post->status_kepegawaian }}</td>
+                      <td>
+                        <a href="{{ route('edit-guru', $post->id) }}">Edit</a>
+                        <form action="{{ route('delete-guru', $post->id) }}" method="POST" style="display:inline">
+                          @csrf
+                          @method('DELETE')
+                          <button type="submit">Delete</button>
+                        </form>
+                      </td>
+                    </tr>
+                    @endforeach
+                  </tbody>
+                </table>
+              </div>
 
             </div>
           </div>
@@ -594,7 +598,8 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="{{ asset('admin/assets/vendor/apexcharts/apexcharts.min.js') }}"></script>

@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\sdController;
 use App\Http\Controllers\TableController;
 
 
@@ -24,8 +23,12 @@ Route::middleware('auth')->group(function () {
 });
 
 
-Route::controller(sdController::class)->group(function () {
+Route::controller(TableController::class)->group(function () {
     Route::get('/tabelGuru', 'tableGuru')->name('tabelGuru');
+    Route::get('/tabelGuru/add', 'createGuru')->name('tabelGuru-add');
+    Route::post('/storeGuru', 'storeGuru')->name('storeGuru');
+    Route::delete('/delete-guru/{post}', 'deleteGuru')->name('delete-guru');
+    Route::put('/update-guru/{post}', 'updateGuru')->name('update-guru');
 });
 
 Route::get('/login', [AuthController::class, 'login'])->name('login');
@@ -39,8 +42,8 @@ Route::post('/register', [AuthController::class, 'store'])->name('auth.store');
 Route::post('/logout', [AuthController::class, 'logout'])->name('auth.logout');
 
 
-Route::get('/tabelGuru', [TableController::class, 'tableGuru'])->name('tabelGuru');
-Route::post('/storeGuru', [TableController::class, 'storeGuru'])->name('storeGuru');
-Route::delete('/delete-guru/{post}', [TableController::class, 'deleteGuru'])->name('delete-guru');
-Route::put('/update-guru/{post}', [TableController::class, 'updateGuru'])->name('update-guru');
+// Route::get('/tabelGuru', [TableController::class, 'tableGuru'])->name('tabelGuru');
+// Route::post('/storeGuru', [TableController::class, 'storeGuru'])->name('storeGuru');
+// Route::delete('/delete-guru/{post}', [TableController::class, 'deleteGuru'])->name('delete-guru');
+// Route::put('/update-guru/{post}', [TableController::class, 'updateGuru'])->name('update-guru');
 //Route::get('/edit-guru/{post}', [TableController::class, 'editGuru'])->name('edit-guru');

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 31, 2024 at 05:32 PM
+-- Generation Time: Jun 13, 2024 at 04:57 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -125,6 +125,14 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'nik', 'niken@gmail.com', NULL, '$2y$10$nLka9sYssBkJeYON.Oxl6OVJjBZww5KCem3hF7AqXru2eIlzaTotm', NULL, '2024-06-02 21:07:04', '2024-06-02 21:07:04'),
+(2, 'niken nazwa', 'nikennazwa@gmail.com', NULL, '$2y$10$L7xeCC5l630gs23plHxovOx0wwPghlI5GM1U/s46mcSbkxI2.cz/e', NULL, '2024-06-02 21:09:17', '2024-06-02 21:09:17');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -188,7 +196,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

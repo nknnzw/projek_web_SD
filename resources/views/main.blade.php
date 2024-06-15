@@ -80,7 +80,7 @@
       <div class="carousel-item">
         <div class="carousel-container">
           <h2 class="animate__animated animate__fadeInDown">Selamat Datang di <span>SD Negeri Rau</span></h2>
-          <p class="animate__animated fanimate__adeInUp">Temukan informasi terbaru tentang kegiatan sekolah dan program pendidikan kami yang inovatif. Mari bersama-sama menciptakan masa depan cerah untuk generasi penerus di SD N Rau.</p>
+          <p class="animate__animated fanimate__adeInUp">Tumbuh bersama kecerdasan, membentuk masa depan yang cerah, di SD Negeri Rau, kami menghidupkan mimpi-mimpi untuk generasi penerus yang tangguh dan berdaya saing.</p>
           <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lebih Lanjut</a>
         </div>
       </div>
@@ -89,7 +89,7 @@
       <div class="carousel-item">
         <div class="carousel-container">
           <h2 class="animate__animated animate__fadeInDown">Selamat Datang di <span>SD Negeri Rau</span></h2>
-          <p class="animate__animated fanimate__adeInUp">Temukan informasi terbaru tentang kegiatan sekolah dan program pendidikan kami yang inovatif. Mari bersama-sama menciptakan masa depan cerah untuk generasi penerus di SD N Rau.</p>
+          <p class="animate__animated fanimate__adeInUp">Di SD Negeri Rau, kami merangkul keberagaman, mendorong kreativitas, dan mengukir prestasi untuk membawa setiap anak menjadi pribadi unggul dalam membangun masa depan yang gemilang.</p>
           <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lebih Lanjut</a>
         </div>
       </div>
@@ -250,7 +250,7 @@
             <div class="portfolio-info">
               <h4>Ekstrakulikuler</h4>
               <p>Ekstrakulikuler Pramuka</p>
-              <a href="{{asset('style/assets/img/dokumentasi/pra1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Ekstrakulikuler Pramuka"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('style/assets/img/dokumentasi/pra1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Eskrakulikuler Pramuka adalah program ekstrakurikuler yang menawarkan petualangan outdoor, keterampilan bertahan hidup, dan pembelajaran kepemimpinan melalui kegiatan berkemah, hiking, dan eksplorasi alam."><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -260,7 +260,7 @@
             <div class="portfolio-info">
               <h4>Ekstrakulikuler</h4>
               <p>Ekstrakulikuler Pramuka</p>
-              <a href="{{asset('style/assets/img/dokumentasi/pra2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Ekstrakulikuler Pramuka"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('style/assets/img/dokumentasi/pra2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Ekstrakulikuler Pramuka memberikan siswa kesempatan untuk mengembangkan keterampilan survival, teamwork, dan tanggung jawab melalui berbagai kegiatan seperti orienteering, memasak di alam terbuka, dan pembuatan perangkat pramuka."><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -270,7 +270,7 @@
             <div class="portfolio-info">
               <h4>Ekstrakulikuler</h4>
               <p>Ekstrakulikuler Pramuka</p>
-              <a href="{{asset('style/assets/img/dokumentasi/pra3.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Ekstrakulikuler Pramuka"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('style/assets/img/dokumentasi/pra3.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Melalui esktrakurikuler Pramuka, siswa dapat menemukan potensi diri mereka dalam lingkungan alam, belajar tentang keberagaman hayati, serta membangun karakter tangguh dan mandiri melalui eksplorasi dan pengalaman langsung di alam bebas."><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -280,7 +280,7 @@
             <div class="portfolio-info">
               <h4>Ekstrakulikuler </h4>
               <p>Ekstrakulikuler Tari</p>
-              <a href="{{asset('style/ assets/img/dokumentasi/tar1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Ekstrakulikuler Tari"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('style/ assets/img/dokumentasi/tar1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Eskrakulikuler tari adalah wadah bagi siswa untuk mengekspresikan kreativitas dan memperdalam pemahaman mereka tentang seni pertunjukan. Melalui latihan rutin dan pertunjukan, siswa mengembangkan keahlian teknis dan menghargai keindahan gerakan dalam berbagai jenis tari."><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -290,7 +290,7 @@
             <div class="portfolio-info">
               <h4>Ekstrakulikuler</h4>
               <p>Ekstrakulikuler Tari</p>
-              <a href="{{asset('style/assets/img/dokumentasi/tar2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Ekstrakulikuler Tari"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('style/assets/img/dokumentasi/tar2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Program esktrakurikuler tari menyediakan platform bagi siswa untuk belajar berbagai genre tari, mulai dari balet klasik hingga tarian modern. Selain itu, siswa juga memperoleh pemahaman tentang sejarah dan budaya di balik setiap gerakan dan koreografi."><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -299,7 +299,7 @@
             <div class="portfolio-info">
               <h4>Ekstrakulikuler</h4>
               <p>Ekstrakulikuler Tari</p>
-              <a href="{{asset('style/assets/img/dokumentasi/tar3.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Ekstrakulikuler Tari"><i class="bx bx-plus"></i></a>
+              <a href="{{asset('style/assets/img/dokumentasi/tar3.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Dalam esktrakurikuler tari, siswa belajar menghargai kerja tim, disiplin, dan dedikasi yang diperlukan untuk mencapai tingkat keunggulan dalam seni tari. Melalui latihan intensif dan penampilan di depan publik, mereka membangun rasa percaya diri dan kepekaan artistik yang mendalam."><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -318,7 +318,7 @@
         <div class="row portfolio-container" data-aos="fade-up">
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-img" style="text-align: center;"> <!-- Tambahkan style untuk mengatur gambar menjadi besar dan berada di tengah -->
-              <img src="{{asset('style/assets/img/dokumentasi/struktur.png')}}" class="img-fluid" style="width: 100%; max-width: 100%; height: auto; max-height: 100vh;" alt="">  <!-- Ubah kelas untuk ukuran gambar -->
+              <img src="{{asset('style/assets/img/dokumentasi/struktur.png')}}" class="img-fluid" style="width: 300%; max-width: 300%; height: auto; max-height: 100vh;" alt="">  <!-- Ubah kelas untuk ukuran gambar -->
             </div>
             <div class="portfolio-info">
               <h4>Struktur</h4>
@@ -488,18 +488,18 @@
               </div>
     
               <div class="phone">
-                <i class="bi bi-phone"></i>
+                <a href="https://wa.me/628233230003" target="_blank">
+                    <i class="bi bi-phone"></i>
+                </a>
                 <h4>Telepon:</h4>
                 <p>+62 8233230003</p>
+            </div>
+            
+            <div class="col-lg-8 col-md-9" data-aos="fade-left">
+              <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15813.196829701592!2d110.678351!3d-6.596741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e700a19c587cfc1%3A0x18a1f334967c45d8!2sJln.%20Balai%20Desa%20Rau%20RT.01%20RW.03%2C%20Kecamatan%20Kedung%2C%20Kabupaten%20Jepara%2C%20Jawa%20Tengah%2C%2059463!5e0!3m2!1sen!2sid!4vYOUR_EMBED_API_KEY" frameborder="0" style="width: 100%; height: 400px; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
               </div>
             </div>
-          </div>
-    
-          <div class="col-lg-8 col-md-6" data-aos="fade-left">
-            <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15813.196829701592!2d110.678351!3d-6.596741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e700a19c587cfc1%3A0x18a1f334967c45d8!2sJln.%20Balai%20Desa%20Rau%20RT.01%20RW.03%2C%20Kecamatan%20Kedung%2C%20Kabupaten%20Jepara%2C%20Jawa%20Tengah%2C%2059463!5e0!3m2!1sen!2sid!4vYOUR_EMBED_API_KEY" frameborder="0" style="width: 100%; height: 400px; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-          </div>
           
     
       </div>
@@ -515,11 +515,7 @@
       <h3>SD N Rau</h3>
       <p>Temukan informasi terbaru tentang kegiatan sekolah dan program pendidikan kami yang inovatif. Mari bersama-sama menciptakan masa depan cerah untuk generasi penerus di SD N Rau.</p>
       <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.facebook.com/SdnRau" class="facebook"><i class="bx bxl-facebook"></i></a>
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>Niken Nazwa</span></strong>.

@@ -10,9 +10,13 @@ class TableController extends Controller
 {
     public function tableGuru()
     {
-        // $siswa = TableSiswa::all();
         $data['posts'] = TabelGuru::all();        
-        return view('table-guru' , $data);
+        return view('tabelGuru' , $data);
+    }
+    public function createGuru()
+    {
+        $data['get'] = TabelGuru::all();        
+        return view('create-guru' , $data);
     }
 
     public function storeGuru(Request $request)
@@ -30,18 +34,18 @@ class TableController extends Controller
 
         // Simpan data ke database
         TabelGuru::create($validatedData);
-        return redirect()->route('table-guru')->with('success', 'Post created successfully!');
+        return redirect()->route('tabelGuru')->with('success', 'Post created successfully!');
     }
 
     public function deleteGuru(TabelGuru $post)
     {
         $post->delete();
-        return redirect()->route('table-guru');
+        return redirect()->route('tabelGuru');
     }
 
     public function updateGuru(Request $request, TabelGuru $post)
     {
         $post->update($request->all());
-        return redirect()->route('table-guru');
+        return redirect()->route('tabelGuru');
     }
 }

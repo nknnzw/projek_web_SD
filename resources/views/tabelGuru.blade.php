@@ -18,6 +18,7 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="{{ asset('admin/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -532,48 +533,48 @@
                   href="https://github.com/fiduswriter/Simple-DataTables" target="_blank">Simple DataTables</a> library.
                 Just add <code>.datatable</code> class name to any table you wish to conver to a datatable. Check for <a
                   href="https://fiduswriter.github.io/simple-datatables/demos/" target="_blank">more examples</a>.</p>
-              <div class="container">
-                <h2>Daftar Guru</h2>
-                <a href="{{ route('tabelGuru-add') }}">Tambah Guru</a>
-                @if (session('success'))
-                <div>{{ session('success') }}</div>
-                @endif
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Gambar</th>
-                      <th>Nama</th>
-                      <th>NIP</th>
-                      <th>Tanggal Lahir</th>
-                      <th>Jenis Kelamin</th>
-                      <th>Jabatan</th>
-                      <th>Status Kepegawaian</th>
-                      <th>Aksi</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    @foreach ($posts as $post)
-                    <tr>
-                      <td>{{ $post->gambar }}</td>
-                      <td>{{ $post->nama }}</td>
-                      <td>{{ $post->nip }}</td>
-                      <td>{{ $post->tanggal_lahir }}</td>
-                      <td>{{ $post->jenis_kelamin }}</td>
-                      <td>{{ $post->jabatan }}</td>
-                      <td>{{ $post->status_kepegawaian }}</td>
-                      <td>
-                        <a href="{{ route('edit-guru', $post->id) }}">Edit</a>
-                        <form action="{{ route('delete-guru', $post->id) }}" method="POST" style="display:inline">
-                          @csrf
-                          @method('DELETE')
-                          <button type="submit">Delete</button>
-                        </form>
-                      </td>
-                    </tr>
-                    @endforeach
-                  </tbody>
-                </table>
-              </div>
+                  <div class="container mt-5">
+                    <h2>Daftar Guru</h2>
+                    <a href="{{ route('tabelGuru-add') }}" class="btn btn-primary mb-3">Tambah Guru</a>
+                    @if (session('success'))
+                        <div class="alert alert-success">{{ session('success') }}</div>
+                    @endif
+                    <table class="table table-bordered table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Gambar</th>
+                                <th>Nama</th>
+                                <th>NIP</th>
+                                <th>Tanggal Lahir</th>
+                                <th>Jenis Kelamin</th>
+                                <th>Jabatan</th>
+                                <th>Status Kepegawaian</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($posts as $post)
+                            <tr>
+                                <td><img src="{{ asset('storage/' . $post->gambar) }}" alt="Gambar Guru" class="img-fluid" width="100"></td>
+                                <td>{{ $post->nama }}</td>
+                                <td>{{ $post->nip }}</td>
+                                <td>{{ $post->tanggal_lahir }}</td>
+                                <td>{{ $post->jenis_kelamin }}</td>
+                                <td>{{ $post->jabatan }}</td>
+                                <td>{{ $post->status_kepegawaian }}</td>
+                                <td>
+                                    <a href="{{ route('update-guru', $post->id) }}" class="btn btn-warning btn-sm">Edit</a>
+                                    <form action="{{ route('delete-guru', $post->id) }}" method="POST" style="display:inline">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                    </form>
+                                </td>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
 
             </div>
           </div>
@@ -613,6 +614,10 @@
 
   <!-- Template Main JS File -->
   <script src="{{ asset('admin/assets/js/main.js') }}"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 

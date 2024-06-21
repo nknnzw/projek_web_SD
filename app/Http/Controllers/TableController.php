@@ -22,6 +22,7 @@ class TableController extends Controller
     public function storeGuru(Request $request)
     {
         $validatedData = $request->validate([
+           'id' => 'required',
             'gambar' => 'required',
             'nama' => 'required',
             'nip' => 'required',

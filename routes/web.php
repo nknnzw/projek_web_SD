@@ -28,7 +28,7 @@ Route::controller(TableController::class)->group(function () {
     Route::get('/tabelGuru/add', 'createGuru')->name('tabelGuru-add');
     Route::post('/storeGuru', 'storeGuru')->name('storeGuru');
     Route::delete('/delete-guru/{post}', 'deleteGuru')->name('delete-guru');
-    Route::put('/update-guru/{post}', 'updateGuru')->name('update-guru');
+    Route::post('/update-guru/{post}', 'updateGuru')->name('update-guru');
 });
 
 Route::get('/login', [AuthController::class, 'login'])->name('login');

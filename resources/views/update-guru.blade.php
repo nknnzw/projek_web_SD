@@ -16,6 +16,7 @@
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="{{ asset('admin/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -527,35 +528,59 @@
             <div class="card-body">
               <h5 class="card-title">Datatables</h5>
               <p>Add lightweight datatables to your project with using the <a href="https://github.com/fiduswriter/Simple-DataTables" target="_blank">Simple DataTables</a> library. Just add <code>.datatable</code> class name to any table you wish to conver to a datatable. Check for <a href="https://fiduswriter.github.io/simple-datatables/demos/" target="_blank">more examples</a>.</p>
-    <div class="container">
-        <h2>Edit Guru</h2>
-        <form action="{{ route('update-guru', $post->id) }}" method="POST">
-            @csrf
-            @method('PUT')
-            <label for="gambar">Gambar:</label>
-            <input type="text" name="gambar" id="gambar" value="{{ $post->gambar }}" required><br>
-            
-            <label for="nama">Nama:</label>
-            <input type="text" name="nama" id="nama" value="{{ $post->nama }}" required><br>
-            
-            <label for="nip">NIP:</label>
-            <input type="text" name="nip" id="nip" value="{{ $post->nip }}" required><br>
-            
-            <label for="tanggal_lahir">Tanggal Lahir:</label>
-            <input type="date" name="tanggal_lahir" id="tanggal_lahir" value="{{ $post->tanggal_lahir }}" required><br>
-            
-            <label for="jenis_kelamin">Jenis Kelamin:</label>
-            <input type="text" name="jenis_kelamin" id="jenis_kelamin" value="{{ $post->jenis_kelamin }}" required><br>
-            
-            <label for="jabatan">Jabatan:</label>
-            <input type="text" name="jabatan" id="jabatan" value="{{ $post->jabatan }}" required><br>
-            
-            <label for="status_kepegawaian">Status Kepegawaian:</label>
-            <input type="text" name="status_kepegawaian" id="status_kepegawaian" value="{{ $post->status_kepegawaian }}" required><br>
-            
-            <button type="submit">Update</button>
-        </form>
-    </div>
+              <div class="container">
+                <h2 class="mt-5">Edit Guru</h2>
+                <form action="{{ route('update-guru', $post->id) }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    @method('POST') <!-- Gunakan PUT method -->
+        
+                    <div class="form-group">
+                        <label for="id">ID:</label>
+                        <input type="text" class="form-control" name="id" id="id" value="{{ $post->id }}" readonly>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="gambar">Gambar:</label>
+                        <input type="file" class="form-control-file" name="gambar" id="gambar" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="nama">Nama:</label>
+                        <input type="text" class="form-control" name="nama" id="nama" value="{{ $post->nama }}" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="nip">NIP:</label>
+                        <input type="text" class="form-control" name="nip" id="nip" value="{{ $post->nip }}" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="tanggal_lahir">Tanggal Lahir:</label>
+                        <input type="date" class="form-control" name="tanggal_lahir" id="tanggal_lahir" value="{{ $post->tanggal_lahir }}" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="jenis_kelamin">Jenis Kelamin:</label>
+                        <select class="form-control" name="jenis_kelamin" id="jenis_kelamin" required>
+                            <option value="Laki-laki" {{ $post->jenis_kelamin == 'Laki-laki' ? 'selected' : '' }}>Laki-laki</option>
+                            <option value="Perempuan" {{ $post->jenis_kelamin == 'Perempuan' ? 'selected' : '' }}>Perempuan</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="jabatan">Jabatan:</label>
+                        <input type="text" class="form-control" name="jabatan" id="jabatan" value="{{ $post->jabatan }}" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="status_kepegawaian">Status Kepegawaian:</label>
+                        <input type="text" class="form-control" name="status_kepegawaian" id="status_kepegawaian" value="{{ $post->status_kepegawaian }}" required>
+                    </div>
+        
+                    <button type="submit" class="btn btn-primary">Update</button>
+                </form>
+            </div>
+        
 </div>
 </div>
 
@@ -593,6 +618,10 @@ Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
 
 <!-- Template Main JS File -->
 <script src="{{ asset('admin/assets/js/main.js') }}"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 

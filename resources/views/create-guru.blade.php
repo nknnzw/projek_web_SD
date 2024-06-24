@@ -543,10 +543,11 @@
                         </div>
             
                         <div class="form-group">
-                            <label for="gambar">Gambar:</label>
-                            <input type="file" class="form-control-file" name="gambar" id="gambar" required>
-                        </div>
-            
+                          <label for="foto">Gambar</label>
+                          <input class="form-control" type="file" name="foto" value="{{ old('foto') }}">
+                          <span class="text-danger">{{ $errors->first('foto') }}</span>
+                      </div>
+
                         <div class="form-group">
                             <label for="nama">Nama:</label>
                             <input type="text" class="form-control" name="nama" id="nama" required>

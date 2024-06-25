@@ -535,7 +535,7 @@
                   href="https://fiduswriter.github.io/simple-datatables/demos/" target="_blank">more examples</a>.</p>
                   <div class="container mt-5">
                     <h2>Daftar Guru</h2>
-                    <a href="{{ route('tabelGuru-add') }}" class="btn btn-primary mb-3">Tambah Guru</a>
+                    <a href="{{ route('tabelGuru.create') }}" class="btn btn-primary mb-3">Tambah Guru</a>
                     @if (session('success'))
                         <div class="alert alert-success">{{ session('success') }}</div>
                     @endif
@@ -555,7 +555,7 @@
                         <tbody>
                             @foreach ($posts as $post)
                             <tr>
-                                <td><img src="{{ asset('storage/' . $post->gambar) }}" alt="Gambar Guru" class="img-fluid" width="100"></td>
+                                <td><img src="{{ asset('/storage/posts/'.$post->foto) }}" alt="Gambar Guru" class="img-fluid" width="100"></td>
                                 <td>{{ $post->nama }}</td>
                                 <td>{{ $post->nip }}</td>
                                 <td>{{ $post->tanggal_lahir }}</td>
@@ -563,12 +563,12 @@
                                 <td>{{ $post->jabatan }}</td>
                                 <td>{{ $post->status_kepegawaian }}</td>
                                 <td>
-                                    <a href="{{ route('update-guru', $post->id) }}" class="btn btn-warning btn-sm">Edit</a>
-                                    <form action="{{ route('delete-guru', $post->id) }}" method="POST" style="display:inline">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
-                                    </form>
+                                    <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('tabelGuru.destroy', $post->id) }}" method="POST">
+                                      <a href="{{ route('tabelGuru.edit', $post->id) }}" class="btn btn-warning btn-sm">Edit</a>
+                                      @csrf
+                                      @method('DELETE')
+                                      <button type="submit" class="btn btn-sm btn-danger">Hapus</button>
+                                  </form>
                                 </td>
                             </tr>
                             @endforeach

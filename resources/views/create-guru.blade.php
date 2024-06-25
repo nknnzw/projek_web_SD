@@ -534,13 +534,8 @@
                   href="https://fiduswriter.github.io/simple-datatables/demos/" target="_blank">more examples</a>.</p>
                   <div class="container">
                     <h2 class="mt-5">Tambah Guru</h2>
-                    <form action="{{ route('storeGuru') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('tabelGuru.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
-            
-                        <div class="form-group">
-                            <label for="id">ID:</label>
-                            <input type="text" class="form-control" name="id" id="id" required>
-                        </div>
             
                         <div class="form-group">
                           <label for="foto">Gambar</label>

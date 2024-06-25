@@ -314,7 +314,7 @@
             </a>
           </li>
           <li>
-            <a href="{{ route('tabelGuru') }}" >
+            <a href="{{ route('tabelGuru.index') }}" >
               <i class="bi bi-circle"></i><span>Data Tables</span>
             </a>
           </li>

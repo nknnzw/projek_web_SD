@@ -530,18 +530,14 @@
               <p>Add lightweight datatables to your project with using the <a href="https://github.com/fiduswriter/Simple-DataTables" target="_blank">Simple DataTables</a> library. Just add <code>.datatable</code> class name to any table you wish to conver to a datatable. Check for <a href="https://fiduswriter.github.io/simple-datatables/demos/" target="_blank">more examples</a>.</p>
               <div class="container">
                 <h2 class="mt-5">Edit Guru</h2>
-                <form action="{{ route('update-guru', $post->id) }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('tabelGuru.update', $post->id) }}" method="POST" enctype="multipart/form-data">
                     @csrf
-                    @method('POST') <!-- Gunakan PUT method -->
+                    @method('PUT') <!-- Gunakan PUT method -->
         
                     <div class="form-group">
-                        <label for="id">ID:</label>
-                        <input type="text" class="form-control" name="id" id="id" value="{{ $post->id }}" readonly>
-                    </div>
-        
-                    <div class="form-group">
-                        <label for="gambar">Gambar:</label>
-                        <input type="file" class="form-control-file" name="gambar" id="gambar" required>
+                        <label for="foto">Gambar:</label><br>
+                        <img src="{{ asset('/storage/posts/'.$post->foto) }}" alt="Gambar Guru" class="img-fluid mb-3" width="100">
+                        <input type="file" class="form-control" name="foto">
                     </div>
         
                     <div class="form-group">

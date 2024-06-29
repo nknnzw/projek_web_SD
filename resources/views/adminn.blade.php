@@ -320,14 +320,6 @@
           </li>
         </ul>
       </li><!-- End Tables Nav -->
-
-     
-       
-
-     
-
-    
-
       <li class="nav-item">
         <a class="nav-link collapsed" href="pages-register.html">
           <i class="bi bi-card-list"></i>
@@ -338,7 +330,7 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="pages-login.html">
           <i class="bi bi-box-arrow-in-right"></i>
-          <span>Login</span>
+          <span>Logout</span>
         </a>
       </li><!-- End Login Page Nav -->
 

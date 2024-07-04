@@ -36,6 +36,13 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+<style>
+  .features-img-bg img {
+    width: 30%;
+    height: auto;
+  }
+  </style>
+  
 
 <body class="index-page">
 
@@ -155,9 +162,85 @@
                 <li><i class="ri-check-double-line"></i> Menjadikan siswa mampu melanjutkan pendidikan kejenjang selanjutnya</li>
               </ul>
             </div>
-            
-
             </div>
+            
+              <div class="row gy-4 align-items-stretch justify-content-between features-item ">
+                <div class="col-lg-5 d-flex align-items-center features-img-bg" data-aos="zoom-out">
+                  <img src="{{asset('style/assets/img/guru/kepsek.jpg')}}" class="img-fluid" alt="" style="width: 50%; height: auto;">
+                </div>
+                <div class="col-lg-7 d-flex justify-content-center flex-column" data-aos="fade-up">
+                  <h3>Selamat datang di website SD Negeri Rau</h3>
+                  <p>Kami bangga menyambut Anda di website kami. Di SD Negeri Rau, kami berkomitmen untuk menyediakan lingkungan belajar yang kondusif dan inspiratif, dengan fokus pada pengembangan karakter dan prestasi akademik siswa.</p>
+                  <p>Salah satu program unggulan kami adalah Ekstrakurikuler Pramuka, yang mengasah keterampilan survival, teamwork, dan tanggung jawab. Kami percaya bahwa setiap siswa memiliki potensi luar biasa yang perlu dikembangkan.</p>
+                  <p>Terima kasih atas kepercayaan Anda kepada Di SD Negeri Rau. Semoga website ini bermanfaat bagi Anda.</p>
+                  <h5>KASAN, S.Pd.SD</h5>
+                </div>
+              </div><!-- Features Item -->
+              <div class="row gy-4">
+
+                <section id="faq" class="faq section">
+
+                  <div class="container">
+            
+                    <div class="row gy-4">
+            
+                      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="content px-xl-5">
+                          <h3><strong>F.A.Q</strong></h3>
+                          <p>
+                            Pertanyaan Yang Sering Ditanyakan
+                          </p>
+                        </div>
+                      </div>
+            
+                      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            
+                        <div class="faq-container">
+                          <div class="faq-item faq-active">
+                            <h3><span class="num">1.</span> <span>Di mana alamat SD Negeri Rau?</span></h3>
+                            <div class="faq-content">
+                              <p> Jln. Balai Desa Rau RT.01 RW.03 Kecamatan Kedung, Kabupaten Jepara, 59463.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                          </div><!-- End Faq item-->
+            
+                          <div class="faq-item">
+                            <h3><span class="num">2.</span> <span>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span></h3>
+                            <div class="faq-content">
+                              <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                          </div><!-- End Faq item-->
+            
+                          <div class="faq-item">
+                            <h3><span class="num">3.</span> <span>Dolor sit amet consectetur adipiscing elit pellentesque?</span></h3>
+                            <div class="faq-content">
+                              <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                          </div><!-- End Faq item-->
+            
+                          <div class="faq-item">
+                            <h3><span class="num">4.</span> <span>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</span></h3>
+                            <div class="faq-content">
+                              <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                          </div><!-- End Faq item-->
+            
+                          <div class="faq-item">
+                            <h3><span class="num">5.</span> <span>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span></h3>
+                            <div class="faq-content">
+                              <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                          </div><!-- End Faq item-->
+            
+                        </div>
+            
+                      </div>
+            
+            
           </div>
 
         </div>
@@ -298,60 +381,54 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pramuka">
               <img src="{{asset('style/assets/img/dokumentasi/pra1.jpg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{asset('style/assets/img/dokumentasi/pra1.jpg')}}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Eskrakulikuler Pramuka</h4>
+                <p></p>
+                <a href="{{asset('style/assets/img/dokumentasi/pra1.jpg')}}" title="Eskrakulikuler Pramuka adalah program ekstrakurikuler yang menawarkan petualangan outdoor, keterampilan bertahan hidup, dan pembelajaran kepemimpinan melalui kegiatan berkemah, hiking, dan eksplorasi alam." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
     
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pramuka">
               <img src="{{asset('style/assets/img/dokumentasi/pra2.jpg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{asset('style/assets/img/dokumentasi/pra2.jpg')}}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Eskrakulikuler Pramuka</h4>
+                  <p></p>
+                  <a href="{{asset('style/assets/img/dokumentasi/pra2.jpg')}}" title="Ekstrakulikuler Pramuka memberikan siswa kesempatan untuk mengembangkan keterampilan survival, teamwork, dan tanggung jawab melalui berbagai kegiatan seperti orienteering, memasak di alam terbuka, dan pembuatan perangkat pramuka." data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
-    
+          </div><!-- End Portfolio Item -->
+          
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pramuka">
               <img src="{{asset('style/assets/img/dokumentasi/pra3.jpg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{asset('style/assets/img/dokumentasi/pra3.jpg')}}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Eskrakulikuler Pramuka</h4>
+                <p></p>
+                <a href="{{asset('style/assets/img/dokumentasi/pra3.jpg')}}" title="Melalui esktrakurikuler Pramuka, siswa dapat menemukan potensi diri mereka dalam lingkungan alam, belajar tentang keberagaman hayati, serta membangun karakter tangguh dan mandiri melalui eksplorasi dan pengalaman langsung di alam bebas." data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
     
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tari">
               <img src="{{asset('style/assets/img/dokumentasi/tar1.jpg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{asset('style/assets/img/dokumentasi/tar1.jpg')}}" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Ekstrakulikuler Tari</h4>
+                <p></p>
+                <a href="{{asset('style/assets/img/dokumentasi/tar1.jpg')}}" title="Eskrakulikuler tari adalah wadah bagi siswa untuk mengekspresikan kreativitas dan memperdalam pemahaman mereka tentang seni pertunjukan. Melalui latihan rutin dan pertunjukan, siswa mengembangkan keahlian teknis dan menghargai keindahan gerakan dalam berbagai jenis tari." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
     
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tari">
               <img src="{{asset('style/assets/img/dokumentasi/tar2.jpg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{asset('style/assets/img/dokumentasi/tar2.jpg')}}" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Ekstrakulikuler Tari</h4>
+                <p></p>
+                <a href="{{asset('style/assets/img/dokumentasi/tar2.jpg')}}" title="Program esktrakurikuler tari menyediakan platform bagi siswa untuk belajar berbagai genre tari, mulai dari balet klasik hingga tarian modern. Selain itu, siswa juga memperoleh pemahaman tentang sejarah dan budaya di balik setiap gerakan dan koreografi." data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
+              </div><!-- End Portfolio Item -->
     
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tari">
               <img src="{{asset('style/assets/img/dokumentasi/tar3.jpg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{asset('style/assets/img/dokumentasi/tar3.jpg')}}" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Ekstrakulikuler Tari</h4>
+                <p></p>
+                <a href="{{asset('style/assets/img/dokumentasi/tar3.jpg')}}" title="Dalam esktrakurikuler tari, siswa belajar menghargai kerja tim, disiplin, dan dedikasi yang diperlukan untuk mencapai tingkat keunggulan dalam seni tari. Melalui latihan intensif dan penampilan di depan publik, mereka membangun rasa percaya diri dan kepekaan artistik yang mendalam." data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
     
@@ -723,7 +800,6 @@
             </div>
           </div>
           @endforeach
-
         </div>
 
 

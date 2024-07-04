@@ -328,11 +328,15 @@
       </li><!-- End Register Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-login.html">
-          <i class="bi bi-box-arrow-in-right"></i>
-          <span>Logout</span>
+        <form id="logout-form" action="{{ route('auth.logout') }}" method="POST" style="display: none;">
+            @csrf
+        </form>
+        <a class="nav-link collapsed" href="{{ route('auth.logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+            <i class="bi bi-box-arrow-in-right"></i>
+            <span>Logout</span>
         </a>
-      </li><!-- End Login Page Nav -->
+    </li>
+    
 
       
 

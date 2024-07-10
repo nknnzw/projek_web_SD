@@ -41,6 +41,65 @@
     width: 30%;
     height: auto;
   }
+  .member {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px; /* Set a fixed height for consistency */
+  }
+
+  .member:hover {
+    transform: translateY(-10px);
+  }
+
+  .member-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 250px; /* Set a fixed height for consistency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .member-img img {
+    transition: 0.3s;
+    width: auto;
+    height: 100%; /* Ensure all images fit within the fixed height */
+    object-fit: cover;
+  }
+
+  .member-info {
+    padding: 10px 20px;
+    flex-grow: 1; /* Ensures the info section grows to fill space */
+  }
+
+  .member-info h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  .member-info span {
+    display: block;
+    font-size: 14px;
+    color: #777;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   </style>
   
 
@@ -400,22 +459,16 @@
         <h2>Struktur</h2>
         <p>Struktur Organisasi Sekolah</p>
       </div><!-- End Section Title -->
-
       <div class="container" data-aos="zoom-in" data-aos-delay="100">
-
         <div class="row g-4">
-
-          <div class="col-lg-4">
-            <div class="portfolio-img" style="text-align: center;"> <!-- Tambahkan style untuk mengatur gambar menjadi besar dan berada di tengah -->
-              <img src="{{asset('style/assets/img/dokumentasi/struktur.png')}}" class="img-fluid" style="width: 300%; max-width: 300%; height: auto; max-height: 100vh;" alt="">  <!-- Ubah kelas untuk ukuran gambar -->
+          <div class="col-lg-4 d-flex justify-content-center align-items-center" style="display: flex; justify-content: center; align-items: center;">
+            <div class="portfolio-img" style="display: flex; justify-content: center; align-items: center; width: 100%; text-align: center;">
+              <img src="{{asset('style/assets/img/dokumentasi/struktur.png')}}" class="img-fluid" style="width: 280%; max-width: 280%; height: auto; max-height: 100vh;" alt="">
             </div>
-          </div><!-- End Pricing Item -->
+          </div>
         </div>
-
       </div>
-
-    </section><!-- /Pricing Section -->
-
+      
     <!-- Recent Posts Section -->
     <section id="recent-posts" class="recent-posts section">
 
@@ -426,22 +479,14 @@
       </div><!-- End Section Title -->
 
       <div class="container">
-
         <div class="row">
-
           @foreach($guru as $d)
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-4">
             <div class="member" data-aos="fade-up">
               <div class="member-img">
-                <img src="{{ asset('/storage/posts/'.$d->foto) }}" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                <img src="{{ asset('/storage/posts/'.$d->foto) }}" class="img-fluid" alt="{{$d->nama}}">
               </div>
-              <div class="member-info">
+              <div class="member-info text-center">
                 <h4>{{$d->nama}}</h4>
                 <span>{{$d->jabatan}}</span>
               </div>
@@ -449,7 +494,10 @@
           </div>
           @endforeach
         </div>
-
+      </div>
+      
+      
+      
 
     </section><!-- /Recent Posts Section -->
 
@@ -458,8 +506,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Kontak</h2>
+        <p>Kontak & Alamat</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -472,75 +520,55 @@
               <div class="col-md-6">
                 <div class="info-item" data-aos="fade" data-aos-delay="200">
                   <i class="bi bi-geo-alt"></i>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street</p>
-                  <p>New York, NY 535022</p>
+                  <h3>Alamat</h3>
+                  <p>Jln. Balai Desa Rau RT.01 RW.03</p>
+                  <p>Kecamatan Kedung, Kabupaten Jepara, 59463</p>
+                  
+                </div>
+              </div><!-- End Info Item -->
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="500">
+                  <i class="bi bi-clock"></i>
+                  <h3>Buka</h3>
+                  <p>Senin - Jumat</p>
+                  <p>07:00 - 14:00</p>
+                  <p>Sabtu</p>
+                  <p>07:00 - 12:00</p>
                 </div>
               </div><!-- End Info Item -->
 
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="300">
-                  <i class="bi bi-telephone"></i>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
-                  <p>+1 6678 254445 41</p>
-                </div>
-              </div><!-- End Info Item -->
+              
 
               <div class="col-md-6">
                 <div class="info-item" data-aos="fade" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
-                  <p>contact@example.com</p>
+                  <h3>Email</h3>
+                  <p>sd_negeri_rau@yahoo.co.id</p>
+                  
                 </div>
               </div><!-- End Info Item -->
-
               <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="500">
-                  <i class="bi bi-clock"></i>
-                  <h3>Open Hours</h3>
-                  <p>Monday - Friday</p>
-                  <p>9:00AM - 05:00PM</p>
+                <div class="info-item" data-aos="fade" data-aos-delay="300">
+                  <a href="https://wa.me/6282133230003" target="_blank">
+                    <i class="bi bi-telephone"></i>
+                    <h3>Telepon</h3>
+                    <p>+62 821 3323 0003</p>
+                  </a>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
+              
 
+              
             </div>
 
           </div>
 
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15847.594894680574!2d110.6651!3d-6.646446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70e03261e7f8c7%3A0x509faf4668a2fcc8!2sSDN%20Rau!5e0!3m2!1sen!2sid!4v1699637916551!5m2!1sen!2sid"
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          
         </div>
 
       </div>
@@ -555,14 +583,11 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Append</span>
+            <span class="sitename">SD Negeri Rau</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>Temukan informasi terbaru tentang kegiatan sekolah dan program pendidikan kami yang inovatif. Mari bersama-sama menciptakan masa depan cerah untuk generasi penerus di SD N Rau.</p>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/SdnRau"><i class="bi bi-facebook"></i></a>
           </div>
         </div>
 
@@ -570,44 +595,45 @@
           <h4>Useful Links</h4>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Jadwal</a></li>
+            <li><a href="#">Ekstrakulikuler</a></li>
+            <li><a href="#">Struktur</a></li>
+            <li><a href="#">Guru</a></li>
+            <li><a href="#">Kontak</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
+          <h4>Layanan Kami</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Kurikulum</a></li>
+            <li><a href="#">Fasilitas</a></li>
+            <li><a href="#">Prestasi</a></li>
+            <li><a href="#">Kegiatan Siswa</a></li>
+            <li><a href="#">Bimbingan Konseling</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <p>Jln. Balai Desa Rau RT.01 RW.03</p>
+          <p>Kecamatan Kedung, Kabupaten Jepara, 59463</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+62 821 3323 0003</span></p>
+          <p><strong>Email:</strong> <span>sd_negeri_rau@yahoo.co.id</span></p>
         </div>
 
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="sitename">Append</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="sitename">SD Negeri Rau</strong></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+       
       </div>
     </div>
 

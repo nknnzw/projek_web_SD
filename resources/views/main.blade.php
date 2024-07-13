@@ -41,64 +41,73 @@
     width: 30%;
     height: auto;
   }
-  .member {
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-    border-radius: 8px;
-    overflow: hidden;
-    text-align: center;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 350px; /* Set a fixed height for consistency */
-  }
+  .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  .member:hover {
-    transform: translateY(-10px);
-  }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .member-img {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 250px; /* Set a fixed height for consistency */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.member {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+  width: 250px; /* Set a fixed width */
+  margin: 10px; /* Add margin for spacing between cards */
+}
 
-  .member-img img {
-    transition: 0.3s;
-    width: auto;
-    height: 100%; /* Ensure all images fit within the fixed height */
-    object-fit: cover;
-  }
+.member:hover {
+  transform: translateY(-10px);
+}
 
-  .member-info {
-    padding: 10px 20px;
-    flex-grow: 1; /* Ensures the info section grows to fill space */
-  }
+.member-img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 250px; /* Set a fixed height for consistency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .member-info h4 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 5px;
-    color: #333;
-  }
+.member-img img {
+  transition: 0.3s;
+  width: auto;
+  height: 100%; /* Ensure all images fit within the fixed height */
+  object-fit: cover;
+}
 
-  .member-info span {
-    display: block;
-    font-size: 14px;
-    color: #777;
-  }
+.member-info {
+  padding: 10px 20px;
+  flex-grow: 1; /* Ensures the info section grows to fill space */
+}
 
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.member-info h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.member-info span {
+  display: block;
+  font-size: 14px;
+  color: #777;
+  word-wrap: break-word; /* Ensure text does not overflow */
+}
 
   </style>
   
@@ -142,12 +151,16 @@
 
       <div class="container d-flex justify-content-center align-items-center">
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 data-aos="fade-up" data-aos-delay="100">Selamat Datang di Website SD Negeri Rau</h2>
-                <p data-aos="fade-up" data-aos-delay="200">Temukan informasi terbaru tentang kegiatan sekolah dan program pendidikan kami yang inovatif. Mari bersama-sama menciptakan masa depan cerah untuk generasi penerus di SD N Rau.</p>
-            </div>
+          <div class="col-lg-12 text-center">
+            <h2 data-aos="fade-up" data-aos-delay="100" style="margin-bottom: 20px;">
+              Selamat Datang di Website SD Negeri Rau
+            </h2>
+            <p data-aos="fade-up" data-aos-delay="200" style="margin-top: 20px;">
+              Temukan informasi terbaru tentang kegiatan sekolah dan program pendidikan kami yang inovatif. Mari bersama-sama menciptakan masa depan cerah untuk generasi penerus di SD N Rau.
+            </p>
+          </div>
         </div>
-    </div>
+      </div>      
     
     </section><!-- /Hero Section -->
 

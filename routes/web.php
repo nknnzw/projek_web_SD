@@ -44,6 +44,8 @@ Route::post('/register', [AuthController::class, 'store'])->name('auth.store');
 Route::post('/logout', [AuthController::class, 'logout'])->name('auth.logout');
 
 
+
+
 // Route::get('/tabelGuru', [TableController::class, 'tableGuru'])->name('tabelGuru');
 // Route::post('/storeGuru', [TableController::class, 'storeGuru'])->name('storeGuru');
 // Route::delete('/delete-guru/{post}', [TableController::class, 'deleteGuru'])->name('delete-guru');

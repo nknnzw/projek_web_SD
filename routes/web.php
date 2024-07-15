@@ -17,6 +17,7 @@ Route::get('/dash', function () {
     return view('adminn');
 });
 
+
 Route::middleware('auth')->group(function () {
     Route::get('dash', function () {
         return view('adminn');

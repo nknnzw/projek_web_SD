@@ -2,6 +2,10 @@
 
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ExtraController;
+use App\Http\Controllers\StrukturController;
+use App\Http\Controllers\JadwalController;
+
 
 
 
@@ -12,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('main');
 // });
 Route::resource('/', \App\Http\Controllers\HomeController::class);
+
+
 
 Route::get('/dash', function () {
     return view('adminn');
@@ -34,6 +40,16 @@ Route::middleware('auth')->group(function () {
 // });
 Route::resource('/tabelGuru', \App\Http\Controllers\TableController::class);
 
+
+Route::get('/data-extras', [ExtraController::class, 'index'])->name('extra.index');
+Route::get('/create-extras', [ExtraController::class, 'create'])->name('extra.create');
+Route::post('/extras', [ExtraController::class, 'store'])->name('extra.store');
+Route::get('/extras/{extra}/edit', [ExtraController::class, 'edit'])->name('extra.edit');
+Route::put('/extras/{extra}/update', [ExtraController::class, 'update'])->name('extra.update');
+Route::delete('/extras/{extra}', [ExtraController::class, 'destroy'])->name('extra.destroy');
+Route::get('/extras/{extra}', [ExtraController::class, 'show'])->name('extra.show');
+
+
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/login', [AuthController::class, 'authenticate'])->name('auth.authenticate');
 
@@ -43,6 +59,15 @@ Route::post('/register', [AuthController::class, 'store'])->name('auth.store');
 
 //logout
 Route::post('/logout', [AuthController::class, 'logout'])->name('auth.logout');
+
+Route::resource('struktur', StrukturController::class);
+
+Route::resource('jadwal', JadwalController::class);
+
+
+//Route::get('ekstra/ekstraa', [ekstraController::class, 'ekstraa'])->name('ekstra.ekstraa');
+//Route::post('ekstra', [ekstraController::class, 'store'])->name('ekstra.store');
+//Route::get('ekstraa', [ekstraController::class, 'index'])->name('ekstraa.index');
 
 
 

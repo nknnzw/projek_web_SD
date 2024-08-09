@@ -12,4 +12,5 @@ class HomeController extends Controller
         $guru = TabelGuru::all();
         return view('main', compact('guru'));
     }
+    
 }

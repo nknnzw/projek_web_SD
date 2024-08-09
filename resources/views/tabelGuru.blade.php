@@ -71,6 +71,23 @@
               <i class="bi bi-circle"></i><span>Data Guru</span>
             </a>
           </li>
+          <li>
+            <a href="{{ route('extra.index') }}" >
+              <i class="bi bi-circle"></i><span>Data Extra</span>
+            </a>
+          </li>
+          <li>
+            <li>
+              <li>
+                <a href="{{ route('struktur.index') }}" >
+                  <i class="bi bi-circle"></i><span>Data Struktur</span>
+                </a>
+              </li>
+              <li>
+                <a href="{{ route('jadwal.index') }}" >
+                  <i class="bi bi-circle"></i><span>Data Jadwal</span>
+                </a>
+              </li>
         </ul>
       </li><!-- End Tables Nav -->
 
@@ -96,7 +113,7 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item">Data</li>
-          <li class="breadcrumb-item active">Data Guru</li>
+          <li class="breadcrumb-item active">Data Extra</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->

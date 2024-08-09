@@ -68,6 +68,22 @@
               <i class="bi bi-circle"></i><span>Data Guru</span>
             </a>
           </li>
+          <li>
+            <a href="{{ route('extra.index') }}" >
+              <i class="bi bi-circle"></i><span>Data Extra</span>
+            </a>
+          </li>
+          <li>
+            <li>
+              <a href="{{ route('struktur.index') }}" >
+                <i class="bi bi-circle"></i><span>Data Struktur</span>
+              </a>
+            </li>
+            <li>
+              <a href="{{ route('jadwal.index') }}" >
+                <i class="bi bi-circle"></i><span>Data Jadwal</span>
+              </a>
+            </li>
         </ul>
       </li><!-- End Tables Nav -->
 

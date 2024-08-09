@@ -18,7 +18,8 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
   <!-- Vendor CSS Files -->
   <link href="{{ asset('admin/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -59,8 +60,7 @@
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
-
-       <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-layout-text-window-reverse"></i><span>Data</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
@@ -77,19 +77,19 @@
           </li>
           <li>
             <li>
-              <a href="{{ route('struktur.index') }}" >
-                <i class="bi bi-circle"></i><span>Data Struktur</span>
-              </a>
-            </li>
-            <li>
-              <a href="{{ route('jadwal.index') }}" >
-                <i class="bi bi-circle"></i><span>Data Jadwal</span>
-              </a>
-            </li>
+                <li>
+                    <a href="{{ route('struktur.index') }}" >
+                      <i class="bi bi-circle"></i><span>Data Struktur</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="{{ route('jadwal.index') }}" >
+                      <i class="bi bi-circle"></i><span>Data Jadwal</span>
+                    </a>
+                  </li>
         </ul>
       </li><!-- End Tables Nav -->
 
-    
       <li class="nav-item">
         <form id="logout-form" action="{{ route('auth.logout') }}" method="POST" style="display: none;">
             @csrf
@@ -100,95 +100,63 @@
         </a>
     </li>   
 
-
+    </ul>
 
   </aside><!-- End Sidebar-->
-
   <main id="main" class="main">
+  <div class="pagetitle">
+    <h1>Data Extra</h1>
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item">Data Extra</li>
+        <li class="breadcrumb-item active">Lihat Extra</li>
+      </ol>
+    </nav>
+  </div><!-- End Page Title -->
 
-    <div class="pagetitle">
-      <h1>Data</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Data Guru</li>
-          <li class="breadcrumb-item active">Tambah Guru</li>
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
+  <section class="section">
+    <div class="row">
+      <div class="col-lg-12">
 
-    <section class="section">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="card">
-            <div class="card-body">
-              
-                    <h2 class="mt-5">Tambah Guru</h2>
-                    <form action="{{ route('tabelGuru.store') }}" method="POST" enctype="multipart/form-data">
-                        @csrf
-            
-                        <div class="form-group">
-                          <label for="foto">Gambar</label>
-                          <input class="form-control" type="file" name="foto" value="{{ old('foto') }}">
-                          <span class="text-danger">{{ $errors->first('foto') }}</span>
-                      </div>
-
-                        <div class="form-group">
-                            <label for="nama">Nama:</label>
-                            <input type="text" class="form-control" name="nama" id="nama" required>
-                        </div>
-            
-                        <div class="form-group">
-                            <label for="nip">NIP:</label>
-                            <input type="text" class="form-control" name="nip" id="nip" required>
-                        </div>
-            
-                        <div class="form-group">
-                            <label for="tanggal_lahir">Tanggal Lahir:</label>
-                            <input type="date" class="form-control" name="tanggal_lahir" id="tanggal_lahir" required>
-                        </div>
-            
-                        <div class="form-group">
-                            <label for="jenis_kelamin">Jenis Kelamin:</label>
-                            <select class="form-control" name="jenis_kelamin" id="jenis_kelamin" required>
-                                <option value="Laki-laki">Laki-laki</option>
-                                <option value="Perempuan">Perempuan</option>
-                            </select>
-                        </div>
-            
-                        <div class="form-group">
-                            <label for="jabatan">Jabatan:</label>
-                            <input type="text" class="form-control" name="jabatan" id="jabatan" required>
-                        </div>
-            
-                        <div class="form-group">
-                            <label for="status_kepegawaian">Status Kepegawaian:</label>
-                            <input type="text" class="form-control" name="status_kepegawaian" id="status_kepegawaian" required>
-                        </div>
-            
-                        <button type="submit" class="btn btn-primary">Simpan</button>
-                    </form>
-                </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-    <div class="copyright">
-      &copy; Copyright <strong><span>SD Negeri Rau</span></strong>
+        <div class="card">
+<div class="container mt-5">
+    <h2>Lihat Ekstra</h2>
+    <div class="form-group">
+        <label for="foto">Foto:</label>
+        <img src="{{ asset('images/'.$extra->foto) }}" width="100">
     </div>
+    <div class="form-group">
+        <label for="nama">Nama:</label>
+        <input type="text" class="form-control" id="nama" name="nama" value="{{ $extra->nama }}" readonly>
+    </div>
+    <div class="form-group">
+        <label for="keterangan">Keterangan:</label>
+        <textarea class="form-control" id="keterangan" name="keterangan" readonly>{{ $extra->keterangan }}</textarea>
+    </div>
+    <div class="form-group">
+        <label for="hari">Hari:</label>
+        <input type="text" class="form-control" id="hari" name="hari" value="{{ $extra->hari }}" readonly>
+    </div>
+</div>
+
+</div>
+</div>
+</section>
+
+</main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong><span>SD Negeri Rau</span></strong>
+        </div>
     <div class="credits">
       <!-- All the links in the footer should remain intact. -->
       <!-- You can delete the links only if you purchased the pro version. -->
       <!-- Licensing information: https://bootstrapmade.com/license/ -->
       <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-      
+     
     </div>
   </footer><!-- End Footer -->
 
@@ -211,9 +179,12 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
 
 </body>
 
 </html>
+
+
+
+
+

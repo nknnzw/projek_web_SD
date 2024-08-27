@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ExtraController;
 use App\Http\Controllers\StrukturController;
 use App\Http\Controllers\JadwalController;
+use App\Http\Controllers\KegiatanController;
+use App\Http\Controllers\PrestasiController;
 
 
 
@@ -62,7 +64,11 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('auth.logout');
 
 Route::resource('struktur', StrukturController::class);
 
+
+
 Route::resource('jadwal', JadwalController::class);
+Route::resource('kegiatan', KegiatanController::class);
+Route::resource('prestasi', PrestasiController::class);
 
 
 //Route::get('ekstra/ekstraa', [ekstraController::class, 'ekstraa'])->name('ekstra.ekstraa');

@@ -83,4 +83,5 @@ class StrukturController extends Controller
 
         return redirect()->route('struktur.index')->with('success', 'Struktur berhasil dihapus.');
     }
+  
 }

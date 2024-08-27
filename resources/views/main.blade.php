@@ -126,13 +126,15 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">Tentang</a></li>
-          <li><a class="nav-link scrollto" href="#services">Jadwal</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Ekstrakulikuler</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Struktur</a></li>
-          <li><a class="nav-link scrollto" href="#recent-posts">Guru</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
+          <li><a class="nav-link scrollto active" href="#home">Home</a></li>
+          <li><a class="nav-link scrollto" href="#tentang">Tentang</a></li>
+          <li><a class="nav-link scrollto" href="#jadwal">Jadwal</a></li>
+          <li><a class="nav-link scrollto " href="#ekstrakulikuler">Ekstrakulikuler</a></li>
+          <li><a class="nav-link scrollto" href="#kegiatan">Kegiatan</a></li>
+          <li><a class="nav-link scrollto" href="#prestasi">Prestasi</a></li>
+          <li><a class="nav-link scrollto" href="#struktur">Struktur</a></li>
+          <li><a class="nav-link scrollto" href="#guru">Guru</a></li>
+          <li><a class="nav-link scrollto" href="#kontak">Kontak</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -145,7 +147,7 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <section id="home" class="hero section dark-background">
 
       <img src="{{asset('style/assets/img/s1.jpeg')}}" alt="" data-aos="fade-in">
 
@@ -164,45 +166,10 @@
     
     </section><!-- /Hero Section -->
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients section">
-
-      <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Clients Section -->
+    
 
     <!-- About Section -->
-    <section id="about" class="about section light-background">
+    <section id="tentang" class="tentang section light-background">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row align-items-xl-center gy-5">
@@ -320,8 +287,8 @@
 
     </section><!-- /About Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
+    <!-- jadwal Section -->
+    <section id="jadwal" class="jadwal section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -378,10 +345,10 @@
         </div>
       </div>
     
-    </section><!-- /Services Section -->
+    </section><!-- /jadwal Section -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <!-- ekstrakulikuler Section -->
+    <section id="ekstrakulikuler" class="portfolio section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -397,7 +364,7 @@
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-pramuka">Pramuka</li>
             <li data-filter=".filter-tari">Tari</li>
-          </ul><!-- End Portfolio Filters -->
+          </ul>
     
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
     
@@ -408,7 +375,7 @@
                 <p></p>
                 <a href="{{asset('style/assets/img/dokumentasi/pra1.jpg')}}" title="Eskrakulikuler Pramuka adalah program ekstrakurikuler yang menawarkan petualangan outdoor, keterampilan bertahan hidup, dan pembelajaran kepemimpinan melalui kegiatan berkemah, hiking, dan eksplorasi alam." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
     
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pramuka">
               <img src="{{asset('style/assets/img/dokumentasi/pra2.jpg')}}" class="img-fluid" alt="">
@@ -417,7 +384,7 @@
                   <p></p>
                   <a href="{{asset('style/assets/img/dokumentasi/pra2.jpg')}}" title="Ekstrakulikuler Pramuka memberikan siswa kesempatan untuk mengembangkan keterampilan survival, teamwork, dan tanggung jawab melalui berbagai kegiatan seperti orienteering, memasak di alam terbuka, dan pembuatan perangkat pramuka." data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
-          </div><!-- End Portfolio Item -->
+          </div>
           
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pramuka">
               <img src="{{asset('style/assets/img/dokumentasi/pra3.jpg')}}" class="img-fluid" alt="">
@@ -426,7 +393,7 @@
                 <p></p>
                 <a href="{{asset('style/assets/img/dokumentasi/pra3.jpg')}}" title="Melalui esktrakurikuler Pramuka, siswa dapat menemukan potensi diri mereka dalam lingkungan alam, belajar tentang keberagaman hayati, serta membangun karakter tangguh dan mandiri melalui eksplorasi dan pengalaman langsung di alam bebas." data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
     
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tari">
               <img src="{{asset('style/assets/img/dokumentasi/tar1.jpg')}}" class="img-fluid" alt="">
@@ -435,7 +402,7 @@
                 <p></p>
                 <a href="{{asset('style/assets/img/dokumentasi/tar1.jpg')}}" title="Eskrakulikuler tari adalah wadah bagi siswa untuk mengekspresikan kreativitas dan memperdalam pemahaman mereka tentang seni pertunjukan. Melalui latihan rutin dan pertunjukan, siswa mengembangkan keahlian teknis dan menghargai keindahan gerakan dalam berbagai jenis tari." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
     
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tari">
               <img src="{{asset('style/assets/img/dokumentasi/tar2.jpg')}}" class="img-fluid" alt="">
@@ -444,7 +411,7 @@
                 <p></p>
                 <a href="{{asset('style/assets/img/dokumentasi/tar2.jpg')}}" title="Program esktrakurikuler tari menyediakan platform bagi siswa untuk belajar berbagai genre tari, mulai dari balet klasik hingga tarian modern. Selain itu, siswa juga memperoleh pemahaman tentang sejarah dan budaya di balik setiap gerakan dan koreografi." data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
-              </div><!-- End Portfolio Item -->
+              </div>
     
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tari">
               <img src="{{asset('style/assets/img/dokumentasi/tar3.jpg')}}" class="img-fluid" alt="">
@@ -453,19 +420,20 @@
                 <p></p>
                 <a href="{{asset('style/assets/img/dokumentasi/tar3.jpg')}}" title="Dalam esktrakurikuler tari, siswa belajar menghargai kerja tim, disiplin, dan dedikasi yang diperlukan untuk mencapai tingkat keunggulan dalam seni tari. Melalui latihan intensif dan penampilan di depan publik, mereka membangun rasa percaya diri dan kepekaan artistik yang mendalam." data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
     
-          </div><!-- End Portfolio Container -->
+          </div>
     
         </div>
     
       </div>
     
-    </section><!-- /Portfolio Section -->
+    </section><!-- /ekstrakulikuler Section -->
+    
     
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section">
+    <!-- struktur Section -->
+    <section id="struktur" class="struktur section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -482,8 +450,8 @@
         </div>
       </div>
       
-    <!-- Recent Posts Section -->
-    <section id="recent-posts" class="recent-posts section">
+    <!-- guru Section -->
+    <section id="guru" class="guru section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -508,14 +476,10 @@
           @endforeach
         </div>
       </div>
-      
-      
-      
-
-    </section><!-- /Recent Posts Section -->
+    </section><!-- / guru Section -->
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <section id="kontak" class="contact section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -586,7 +550,7 @@
 
       </div>
 
-    </section><!-- /Contact Section -->
+    </section><!-- /kontak Section -->
 
   </main>
 
@@ -601,19 +565,20 @@
           <p>Temukan informasi terbaru tentang kegiatan sekolah dan program pendidikan kami yang inovatif. Mari bersama-sama menciptakan masa depan cerah untuk generasi penerus di SD N Rau.</p>
           <div class="social-links d-flex mt-4">
             <a href="https://www.facebook.com/SdnRau"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.youtube.com/@sdnrau7390"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Tentang</a></li>
-            <li><a href="#">Jadwal</a></li>
-            <li><a href="#">Ekstrakulikuler</a></li>
-            <li><a href="#">Struktur</a></li>
-            <li><a href="#">Guru</a></li>
-            <li><a href="#">Kontak</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#jadwal">Jadwal</a></li>
+            <li><a href="#ekstrakulikuler">Ekstrakulikuler</a></li>
+            <li><a href="#struktur">Struktur</a></li>
+            <li><a href="#guru">Guru</a></li>
+            <li><a href="#kontak">Kontak</a></li>
           </ul>
         </div>
 

@@ -87,6 +87,16 @@
                       <i class="bi bi-circle"></i><span>Data Jadwal</span>
                     </a>
                   </li>
+                  <li>
+                    <a href="{{ route('kegiatan.index') }}" >
+                      <i class="bi bi-circle"></i><span>Data Kegiatan</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="{{ route('prestasi.index') }}" >
+                      <i class="bi bi-circle"></i><span>Data Prestasi</span>
+                    </a>
+                  </li>
         </ul>
       </li><!-- End Tables Nav -->
 
@@ -109,7 +119,7 @@
     <nav>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item">Data</li>
+        <li class="breadcrumb-item">Data Struktur</li>
         <li class="breadcrumb-item active">Lihat Struktur</li>
       </ol>
     </nav>

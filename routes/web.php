@@ -7,9 +7,7 @@ use App\Http\Controllers\StrukturController;
 use App\Http\Controllers\JadwalController;
 use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\PrestasiController;
-
-
-
+use App\Http\Controllers\UserController;
 
 // Route::get('/', function () {
 //     return view('main');
@@ -62,10 +60,11 @@ Route::post('/register', [AuthController::class, 'store'])->name('auth.store');
 //logout
 Route::post('/logout', [AuthController::class, 'logout'])->name('auth.logout');
 
+Route::middleware('auth')->group(function() {
+    Route::resource('user', UserController::class);
+});
+
 Route::resource('struktur', StrukturController::class);
-
-
-
 Route::resource('jadwal', JadwalController::class);
 Route::resource('kegiatan', KegiatanController::class);
 Route::resource('prestasi', PrestasiController::class);

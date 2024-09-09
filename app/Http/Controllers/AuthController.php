@@ -18,20 +18,19 @@ class AuthController extends Controller
         return view('auth.register');
     }
     public function authenticate(Request $request)
-    {
-        $credentials = $request->validate([
-            'email' => ['required', 'email'],
-            'password' => ['required'],
-        ]);
+{
+    $credentials = $request->only('email', 'password');
 
-        if (Auth::attempt($credentials)) {
-            $request->session()->regenerate();
-            return redirect()->intended('/dash');
-        }
-        return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
-        ]);
+    if (Auth::attempt($credentials)) {
+        // Authentication passed...
+        return redirect()->intended('dash'); // or wherever you want to redirect
     }
+
+    // Authentication failed...
+    return redirect()->back()->withErrors([
+        'email' => 'Email atau password salah.',
+    ])->withInput($request->except('password')); // Return the email and remember inputs
+}
     public function store(Request $request)
     {
         $validate = $request->validate([

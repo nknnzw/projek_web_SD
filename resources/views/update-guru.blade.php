@@ -84,6 +84,16 @@
                 <i class="bi bi-circle"></i><span>Data Jadwal</span>
               </a>
             </li>
+            <li>
+              <a href="{{ route('kegiatan.index') }}" >
+                <i class="bi bi-circle"></i><span>Data Kegiatan</span>
+              </a>
+            </li>
+            <li>
+              <a href="{{ route('prestasi.index') }}" >
+                <i class="bi bi-circle"></i><span>Data Prestasi</span>
+              </a>
+            </li>
         </ul>
       </li><!-- End Tables Nav -->
 

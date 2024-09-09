@@ -147,8 +147,19 @@
                           <i class="bi bi-circle"></i><span>Data Prestasi</span>
                         </a>
                       </li>
+                      <li>
+                        <a href="{{ route('user.index') }}" >
+                          <i class="bi bi-circle"></i><span>Data Admin</span>
+                        </a>
+                      </li>
         </ul>
       </li><!-- End Tables Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{ route('auth.register') }}">
+            <i class="bi bi-person"></i>
+            <span>Register</span>
+        </a>
+    </li>    
       <li class="nav-item">
         <form id="logout-form" action="{{ route('auth.logout') }}" method="POST" style="display: none;">
             @csrf

@@ -141,7 +141,7 @@
                         <div class="alert alert-success">{{ session('success') }}</div>
                     @endif
                     <table class="table table-bordered table-striped">
-                        <thead class="thead-dark">
+                        <thead class="thead">
                             <tr>
                                 <th>Gambar</th>
                                 <th>Nama</th>

@@ -203,26 +203,11 @@
             </div>
             </div>
             
-              <div class="row gy-4 align-items-stretch justify-content-between features-item ">
-                <div class="col-lg-5 d-flex align-items-center features-img-bg" data-aos="zoom-out">
-                  <img src="{{asset('style/assets/img/guru/kepsek.jpg')}}" class="img-fluid" alt="" style="width: 50%; height: auto;">
-                </div>
-                <div class="col-lg-7 d-flex justify-content-center flex-column" data-aos="fade-up">
-                  <h3>Selamat datang di website SD Negeri Rau</h3>
-                  <p>Kami bangga menyambut Anda di website kami. Di SD Negeri Rau, kami berkomitmen untuk menyediakan lingkungan belajar yang kondusif dan inspiratif, dengan fokus pada pengembangan karakter dan prestasi akademik siswa.</p>
-                  <p>Salah satu program unggulan kami adalah Ekstrakurikuler Pramuka, yang mengasah keterampilan survival, teamwork, dan tanggung jawab. Kami percaya bahwa setiap siswa memiliki potensi luar biasa yang perlu dikembangkan.</p>
-                  <p>Terima kasih atas kepercayaan Anda kepada Di SD Negeri Rau. Semoga website ini bermanfaat bagi Anda.</p>
-                  <h5>KASAN, S.Pd.SD</h5>
-                </div>
-              </div><!-- Features Item -->
+              
               <div class="row gy-4">
-
                 <section id="faq" class="faq section">
-
                   <div class="container">
-            
                     <div class="row gy-4">
-            
                       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="content px-xl-5">
                           <h3><strong>F.A.Q</strong></h3>
@@ -252,15 +237,7 @@
                           </div><!-- End Faq item-->
             
                           <div class="faq-item">
-                            <h3><span class="num">3.</span> <span>Siapa nama kepala sekolah SD Negeri Rau?</span></h3>
-                            <div class="faq-content">
-                              <p>SD Negeri Rau dipimpin oleh kepala sekolah bernama Kasan, S.Pd.SD.</p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                          </div><!-- End Faq item-->
-            
-                          <div class="faq-item">
-                            <h3><span class="num">4.</span> <span>Apa saja program unggulan di SD Negeri Rau?</span></h3>
+                            <h3><span class="num">3.</span> <span>Apa saja program unggulan di SD Negeri Rau?</span></h3>
                             <div class="faq-content">
                               <p>SD Negeri Rau memiliki beberapa program unggulan, antara lain Ekstrakurikuler Pramuka dan Ekstrakulikuler Tari. Program-program ini bertujuan untuk mengembangkan keterampilan, karakter dan pengalaman siswa.</p>
                             </div>
@@ -268,7 +245,7 @@
                           </div><!-- End Faq item-->
             
                           <div class="faq-item">
-                            <h3><span class="num">5.</span> <span>Bagaimana cara mendaftar di SD Negeri Rau?</span></h3>
+                            <h3><span class="num">4.</span> <span>Bagaimana cara mendaftar di SD Negeri Rau?</span></h3>
                             <div class="faq-content">
                                 <p>Untuk mendaftar di SD Negeri Rau, calon siswa dapat mengunjungi kantor sekolah untuk mengisi formulir pendaftaran. Informasi lebih lanjut mengenai persyaratan dan prosedur pendaftaran dapat ditemukan di website resmi SD Negeri Rau atau menghubungi bagian administrasi sekolah.</p>
                             </div>

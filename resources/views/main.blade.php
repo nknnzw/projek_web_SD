@@ -410,7 +410,7 @@
     
 
     <!-- struktur Section -->
-    <section id="struktur" class="struktur section">
+    <section id="struktur" class="struktur section mb-3">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -419,16 +419,17 @@
       </div><!-- End Section Title -->
       <div class="container" data-aos="zoom-in" data-aos-delay="100">
         <div class="row g-4">
-          <div class="col-lg-4 d-flex justify-content-center align-items-center" style="display: flex; justify-content: center; align-items: center;">
-            <div class="portfolio-img" style="display: flex; justify-content: center; align-items: center; width: 100%; text-align: center;">
-              <img src="{{asset('style/assets/img/dokumentasi/struktur.png')}}" class="img-fluid" style="width: 280%; max-width: 280%; height: auto; max-height: 100vh;" alt="">
+          <!-- <div class="col-lg-4 d-flex justify-content-center align-items-center" style="display: flex; justify-content: center; align-items: center;"> -->
+            <div class="portfolio-img col-12 col-md-8 col-lg-8" style="display: flex; justify-content: center; align-items: center; text-align: center;">
+              <img src="{{asset('style/assets/img/dokumentasi/struktur.png')}}" class="img-fluid" alt="">
             </div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
+    </section>
       
     <!-- guru Section -->
-    <section id="guru" class="guru section">
+    <section id="guru" class="guru section mb-2">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">

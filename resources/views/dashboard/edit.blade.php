@@ -50,6 +50,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Sidebar ======= -->
+
   @include("sidebar")
 
   <main id="main" class="main">
@@ -58,8 +59,8 @@
     <nav>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item">Data Prestasi</li>
-        <li class="breadcrumb-item active">Tambah Prestasi</li>
+        <li class="breadcrumb-item">Data Dashboard</li>
+        <li class="breadcrumb-item active">Edit Data</li>
       </ol>
     </nav>
   </div><!-- End Page Title -->
@@ -68,7 +69,7 @@
     <div class="row">
       <div class="col-lg-12">
     <div class="container mt-5">
-        <h1 class="mb-4">Tambah Prestasi</h1>
+        <h1 class="mb-4">Edit Data</h1>
 
         @if ($errors->any())
             <div class="alert alert-danger">
@@ -80,22 +81,23 @@
             </div>
         @endif
 
-        <form action="{{ route('prestasi.store') }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('dashboard.update') }}" method="POST">
             @csrf
             <div class="form-group">
-                <label for="foto">Foto</label>
-                <input type="file" name="foto" class="form-control" required>
+                <label for="nama">Jumlah Siswa</label>
+                <input type="text" name="siswa" class="form-control" value="{{ $dashboard->jumlah_Siswa }}" required>
             </div>
 
             <div class="form-group">
-                <label for="nama">Nama</label>
-                <input type="text" name="nama" class="form-control" required>
+                <label for="keterangan">Kurikulum</label>
+                <input name="kurikulum" class="form-control" value="{{ $dashboard->kurikulum }}" required>
             </div>
 
             <div class="form-group">
-                <label for="keterangan">Keterangan</label>
-                <textarea name="keterangan" class="form-control" required></textarea>
+                <label for="keterangan">Informasi Terkini</label>
+                <textarea name="informasi" class="form-control" required>{{ $dashboard->informasi_terkini }}</textarea>
             </div>
+
 
             <button type="submit" class="btn btn-primary mt-3">Simpan</button>
         </form>
@@ -144,7 +146,3 @@
 </body>
 
 </html>
-
-
-
-

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ExtraController;
 use App\Http\Controllers\StrukturController;
@@ -19,15 +20,11 @@ Route::resource('/', \App\Http\Controllers\HomeController::class);
 
 
 
-Route::get('/dash', function () {
-    return view('adminn');
-});
-
 
 Route::middleware('auth')->group(function () {
-    Route::get('dash', function () {
-        return view('adminn');
-    })->name("dashboard");
+    Route::get("dash", [DashboardController::class, "index"])->name("dashboard.index");
+    Route::get("dashboard/edit", [DashboardController::class, "edit"])->name("dashboard.edit");
+    Route::post("dashboard/update", [DashboardController::class, "update"])->name("dashboard.update");
 });
 
 

@@ -33,6 +33,15 @@
   <!-- Template Main CSS File -->
   <link href="{{ asset('admin/assets/css/style.css') }}" rel="stylesheet">
 
+  <style>
+    .show-img {
+      display: block;
+    }
+    .hide-img {
+      display: none;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -54,12 +63,12 @@
 
   <main id="main" class="main">
   <div class="pagetitle">
-    <h1>Data Extra</h1>
+    <h1>Data Ekstrakulikuler</h1>
     <nav>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item">Data Extra</li>
-        <li class="breadcrumb-item active">Tambah Extra</li>
+        <li class="breadcrumb-item">Data Ekstrakulikuler</li>
+        <li class="breadcrumb-item active">Entry Data</li>
       </ol>
     </nav>
   </div><!-- End Page Title -->
@@ -72,12 +81,17 @@
 
 
 <div class="container mt-5">
-    <h2>Tambah Ekstra</h2>
+    <h2>Entry Data</h2>
     <form action="{{ route('extra.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <label for="foto">Foto:</label>
-            <input type="file" class="form-control" id="foto" name="foto">
+            <input type="file" onchange="previewPhoto(this)" class="form-control" id="foto" name="foto">
+        </div>
+        <div class="form-group">
+            <div class="form-group mt-2 mb-2">
+                <img src="" style="max-height: 350px;max-width: 500px;" id="file-preview" class="hide-img" alt="preview foto">
+            </div>
         </div>
         <div class="form-group">
             <label for="nama">Nama:</label>
@@ -119,6 +133,21 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
+
+  <script>
+    function previewPhoto(input) {
+      const file = input.files;
+      if (file) {
+          const fileReader = new FileReader();
+          const preview = document.getElementById('file-preview');
+          fileReader.onload = function (event) {
+              preview.setAttribute('class', 'show-img');
+              preview.setAttribute('src', event.target.result);
+          }
+          fileReader.readAsDataURL(file[0]);
+      }
+    }
+  </script>
 
   <!-- Vendor JS Files -->
   <script src="{{ asset('admin/assets/vendor/apexcharts/apexcharts.min.js') }}"></script>

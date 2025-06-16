@@ -32,6 +32,14 @@
 
   <!-- Template Main CSS File -->
   <link href="{{ asset('admin/assets/css/style.css') }}" rel="stylesheet">
+  <style>
+    .show-img {
+      display: block;
+    }
+    .hide-img {
+      display: none;
+    }
+  </style>
 
 </head>
 
@@ -86,7 +94,10 @@
             @csrf
             <div class="form-group">
                 <label for="foto">Foto</label>
-                <input type="file" name="foto" class="form-control">
+                <input type="file" onchange="previewPhoto(this)" name="foto" class="form-control">
+            </div>
+            <div class="form-group mt-2 mb-2">
+                <img src="" style="max-height: 350px;max-width: 500px;" id="file-preview" class="hide-img" alt="preview foto">
             </div>
 
             <div class="form-group">
@@ -122,6 +133,21 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
+
+  <script>
+    function previewPhoto(input) {
+      const file = input.files;
+      if (file) {
+          const fileReader = new FileReader();
+          const preview = document.getElementById('file-preview');
+          fileReader.onload = function (event) {
+              preview.setAttribute('class', 'show-img');
+              preview.setAttribute('src', event.target.result);
+          }
+          fileReader.readAsDataURL(file[0]);
+      }
+    }
+  </script>
 
   <!-- Vendor JS Files -->
   <script src="{{ asset('admin/assets/vendor/apexcharts/apexcharts.min.js') }}"></script>

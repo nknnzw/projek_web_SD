@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Extra extends Model
 {
     protected $table = 'extras';
-    protected $fillable = ['id','foto', 'nama', 'keterangan', 'hari'];
+    protected $fillable = ['foto', 'nama', 'keterangan', 'hari'];
     public $timestamps = false;
 }

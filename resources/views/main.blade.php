@@ -274,52 +274,15 @@
       </div><!-- End Section Title -->
     
       <div class="container">
-    
-        <div class="row gy-4">
-    
-          <div class="row">
-            <div class="col-lg-6 col-md-6">
-              <div class="icon-box" data-aos="zoom-in-left">
-                <img src="{{asset('style/assets/img/jadwal/1.png')}}" alt="Deskripsi Gambar" style="max-width: 100%; height: auto;">
+          <div class="row gy-4">
+            @foreach ($jadwal as $j)              
+              <div class="col-lg-6 col-md-6">
+                <div class="icon-box" data-aos="zoom-in-left">
+                  <img src="{{asset('images/' . $j->foto)}}" alt="{{ $j->keterangan }}" style="max-width: 100%; height: auto;">
+                </div>
               </div>
-            </div>
-    
-            <div class="col-lg-6 col-md-6">
-              <div class="icon-box" data-aos="zoom-in-left">
-                <img src="{{asset('style/assets/img/jadwal/2.png')}}" alt="Deskripsi Gambar" style="max-width: 100%; height: auto;">
-              </div>
-            </div>
+            @endforeach
           </div>
-    
-          <div class="row">
-            <div class="col-lg-6 col-md-6">
-              <div class="icon-box" data-aos="zoom-in-left">
-                <img src="{{asset('style/assets/img/jadwal/3.png')}}" alt="Deskripsi Gambar" style="max-width: 100%; height: auto;">
-              </div>
-            </div>
-    
-            <div class="col-lg-6 col-md-6">
-              <div class="icon-box" data-aos="zoom-in-left">
-                <img src="{{asset('style/assets/img/jadwal/4.png')}}" alt="Deskripsi Gambar" style="max-width: 100%; height: auto;">
-              </div>
-            </div>
-          </div>
-    
-          <div class="row">
-            <div class="col-lg-6 col-md-6">
-              <div class="icon-box" data-aos="zoom-in-left">
-                <img src="{{asset('style/assets/img/jadwal/5.png')}}" alt="Deskripsi Gambar" style="max-width: 100%; height: auto;">
-              </div>
-            </div>
-    
-            <div class="col-lg-6 col-md-6">
-              <div class="icon-box" data-aos="zoom-in-left">
-                <img src="{{asset('style/assets/img/jadwal/6.png')}}" alt="Deskripsi Gambar" style="max-width: 100%; height: auto;">
-              </div>
-            </div>
-          </div>
-    
-        </div>
       </div>
     
     </section><!-- /jadwal Section -->
@@ -344,16 +307,18 @@
           </ul>
     
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-    
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pramuka">
-              <img src="{{asset('style/assets/img/dokumentasi/pra1.jpg')}}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Eskrakulikuler Pramuka</h4>
-                <p></p>
-                <a href="{{asset('style/assets/img/dokumentasi/pra1.jpg')}}" title="Eskrakulikuler Pramuka adalah program ekstrakurikuler yang menawarkan petualangan outdoor, keterampilan bertahan hidup, dan pembelajaran kepemimpinan melalui kegiatan berkemah, hiking, dan eksplorasi alam." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+
+            @foreach ($ekstrakulikuler as $eks)
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-{{ $eks->nama }}">
+                <img src="{{asset('images/' . $eks->foto)}}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>{{ $eks->keterangan }}</h4>
+                  <p></p>
+                  <a href="{{asset('images/' . $eks->foto)}}" title="{{ $eks->keterangan . ' - ' . $eks->hari }}" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                </div>
               </div>
-            </div>
-    
+            @endforeach
+{{--     
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pramuka">
               <img src="{{asset('style/assets/img/dokumentasi/pra2.jpg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -361,7 +326,7 @@
                   <p></p>
                   <a href="{{asset('style/assets/img/dokumentasi/pra2.jpg')}}" title="Ekstrakulikuler Pramuka memberikan siswa kesempatan untuk mengembangkan keterampilan survival, teamwork, dan tanggung jawab melalui berbagai kegiatan seperti orienteering, memasak di alam terbuka, dan pembuatan perangkat pramuka." data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
-          </div>
+            </div>
           
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pramuka">
               <img src="{{asset('style/assets/img/dokumentasi/pra3.jpg')}}" class="img-fluid" alt="">
@@ -397,7 +362,7 @@
                 <p></p>
                 <a href="{{asset('style/assets/img/dokumentasi/tar3.jpg')}}" title="Dalam esktrakurikuler tari, siswa belajar menghargai kerja tim, disiplin, dan dedikasi yang diperlukan untuk mencapai tingkat keunggulan dalam seni tari. Melalui latihan intensif dan penampilan di depan publik, mereka membangun rasa percaya diri dan kepekaan artistik yang mendalam." data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               </div>
-            </div>
+            </div> --}}
     
           </div>
     
@@ -408,6 +373,68 @@
     </section><!-- /ekstrakulikuler Section -->
     
     
+    {{-- Kegiatan section --}}
+    <section id="kegiatan" class="portfolio section mb-3">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Kegiatan</h2>
+          <p>Kegiatan Terbaru SD Negeri Rau</p>
+        </div>
+        <div class="container">
+            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+    
+              <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+                <li data-filter="*" class="filter-active">All</li>
+                @foreach ($kegiatan->keys() as $k)
+                  <li data-filter=".filter-@getNamaBulan($k)">@getNamaBulan($k)</li>
+                @endforeach
+              </ul>
+
+              <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+                @foreach ($kegiatan as $bulan => $value)
+                  @foreach ($value as $v)
+                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-@getNamaBulan($bulan)">
+                      <img style="max-height:250px;min-height:250px;" src="{{asset('media/' . $v->media)}}" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4>{{ $v->keterangan }}</h4>
+                        <p></p>
+                        <a href="{{asset('media/' . $v->media)}}"
+                          data-gallery="portfolio-gallery-app"
+                          class="glightbox preview-link">
+                          <i class="bi bi-zoom-in"></i>
+                        </a>
+                      </div>
+                    </div>
+                  @endforeach
+                @endforeach
+              </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Prestasi Section --}}
+    <section id="prestasi" class="portfolio section mb-3">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Prestasi</h2>
+          <p>Prestasi SD Negeri Rau</p>
+        </div>
+
+        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          @foreach ($prestasi as $pr)
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+                <img style="max-height:250px;min-height:250px;" src="{{asset('images/' . $pr->foto)}}" class="img-fluid" alt="{{ $pr->nama }}">
+                <div class="portfolio-info">
+                  <h4>{{ $pr->keterangan }}</h4>
+                  <p></p>
+                  <a href="{{asset('media/' . $pr->foto)}}"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link">
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                </div>
+              </div>
+          @endforeach
+        </div>
+    </section>
 
     <!-- struktur Section -->
     <section id="struktur" class="struktur section mb-3">
@@ -421,7 +448,11 @@
         <div class="row g-4">
           <!-- <div class="col-lg-4 d-flex justify-content-center align-items-center" style="display: flex; justify-content: center; align-items: center;"> -->
             <div class="portfolio-img col-12 col-md-8 col-lg-8" style="display: flex; justify-content: center; align-items: center; text-align: center;">
-              <img src="{{asset('style/assets/img/dokumentasi/struktur.png')}}" class="img-fluid" alt="">
+              @if (isset($struktur))
+                <img src="{{asset('images/' . $struktur->foto )}}" class="img-fluid" alt="">
+              @else
+                <img src="{{asset('style/assets/img/dokumentasi/struktur.png')}}" class="img-fluid" alt="">
+              @endif
             </div>
           <!-- </div> -->
         </div>

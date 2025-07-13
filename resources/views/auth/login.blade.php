@@ -35,17 +35,17 @@
         <div class="invalid-feedback">Masukkan Password!</div>
       </div>
 
-      <div class="col-12 mb-2">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="remember" value="true" id="rememberMe">
-          <label class="form-check-label" for="rememberMe">Remember me</label>
-        </div>
-      </div>
-
+      
       <div class="col-12 mb-2">
         <button class="btn btn-primary w-100" type="submit">Login</button>
       </div>
     </form>
+
+    <div class="text-center mt-3">
+      <a href="{{ url('/') }}" class="btn btn-outline-secondary">
+          ← Kembali ke Beranda
+      </a>
+      </div>
 
   </div>
 </div>

@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{asset('admin/assets/img/logosd.png')}} " rel="icon">
+  <link href="{{asset('admin/assets/img/logosd.png')}} " rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -41,11 +41,11 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
+      <i class="bi bi-list toggle-sidebar-btn me-3"></i>
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">SD Negeri Rau</span>
       </a>
-      <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
   </header><!-- End Header -->
 
@@ -58,8 +58,8 @@
     <nav>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item">Data Extra</li>
-        <li class="breadcrumb-item active">Lihat Extra</li>
+        <li class="breadcrumb-item">Data Ekstrakulikuler</li>
+        <li class="breadcrumb-item active">Lihat Ekstrakulikuler</li>
       </ol>
     </nav>
   </div><!-- End Page Title -->
@@ -70,7 +70,7 @@
 
         <div class="card">
 <div class="container mt-5">
-    <h2>Lihat Ekstra</h2>
+    <h2>Lihat Ekstrakulikuler</h2>
     <div class="form-group">
         <label for="foto">Foto:</label>
         <img src="{{ asset('images/'.$extra->foto) }}" width="100">
@@ -87,6 +87,7 @@
         <label for="hari">Hari:</label>
         <input type="text" class="form-control" id="hari" name="hari" value="{{ $extra->hari }}" readonly>
     </div>
+    <a href="{{ route('extra.index') }}" class="btn btn-secondary mt-3">Kembali</a>
 </div>
 
 </div>

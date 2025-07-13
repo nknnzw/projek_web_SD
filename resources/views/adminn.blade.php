@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{asset('admin/assets/img/favicon.png')}} " rel="icon">
-  <link href="{{asset('admin/assets/img/apple-touch-icon.png')}} " rel="apple-touch-icon">
+  <link href="{{asset('admin/assets/img/logosd.png')}} " rel="icon">
+  <link href="{{asset('admin/assets/img/logosd.png')}} " rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -84,12 +84,13 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <i class="bi bi-list toggle-sidebar-btn me-3"></i>
+      <a href="" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block">SD N Rau</span>
+        <span class="d-none d-lg-block">SD Negeri Rau</span>
       </a>
-      <i class="bi bi-list toggle-sidebar-btn"></i>
-    </div><!-- End Logo -->
+    </div>
+<!-- End Logo -->
 
   </header><!-- End Header -->
 
@@ -105,10 +106,6 @@
       <div class="card">
         <h4>Informasi Terkini</h4>
         <p>{{ $info_terkini }}</p>
-      </div>
-      <div class="card">
-        <h4>Jumlah Guru</h4>
-        <p>{{ $jumlah_guru }} Guru</p>
       </div>
       <div class="card">
         <h4>Jumlah Siswa</h4>

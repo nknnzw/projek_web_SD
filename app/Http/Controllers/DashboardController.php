@@ -30,6 +30,8 @@ class DashboardController extends Controller
         $dashboard->jumlah_Siswa = $request->siswa;
         $dashboard->informasi_terkini = $request->informasi;
         $dashboard->save();
-        return redirect()->back(); 
+        return redirect('/dash')->with('success', 'Data berhasil disimpan!');
+
+ 
     }
 }

@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{asset('admin/assets/img/logosd.png')}} " rel="icon">
+  <link href="{{asset('admin/assets/img/logosd.png')}} " rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -40,12 +40,12 @@
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
 
-    <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+   <div class="d-flex align-items-center justify-content-between">
+      <i class="bi bi-list toggle-sidebar-btn me-3"></i>
+      <a href="" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">SD Negeri Rau</span>
       </a>
-      <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
   </header><!-- End Header -->
 
@@ -54,12 +54,12 @@
   
   <main id="main" class="main">
   <div class="pagetitle">
-    <h1>Data Extra</h1>
+    <h1>Data Ekstrakulikuler</h1>
     <nav>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item">Data Extra</li>
-        <li class="breadcrumb-item active">Edit Extra</li>
+        <li class="breadcrumb-item">Home</li>
+        <li class="breadcrumb-item">Data Ekstrakulikuler</li>
+        <li class="breadcrumb-item active">Edit Ekstrakulikuler</li>
       </ol>
     </nav>
   </div><!-- End Page Title -->
@@ -70,7 +70,7 @@
 
         <div class="card">
 <div class="container mt-5">
-    <h2>Edit Ekstra</h2>
+    <h2>Edit Ekstrakulikuler</h2>
     <form action="{{ route('extra.update', $extra->id) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')

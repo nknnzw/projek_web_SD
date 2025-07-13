@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Edit Pengguna - SD Negeri Rau</title>
+  <title>Dashboard - SD N Rau</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{asset('admin/assets/img/favicon.png')}} " rel="icon">
-  <link href="{{asset('admin/assets/img/apple-touch-icon.png')}} " rel="apple-touch-icon">
+  <link href="{{asset('admin/assets/img/logosd.png')}} " rel="icon">
+  <link href="{{asset('admin/assets/img/logosd.png')}} " rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -43,11 +43,11 @@
     <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <i class="bi bi-list toggle-sidebar-btn me-3"></i>
+      <a href="" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">SD Negeri Rau</span>
       </a>
-      <i class="bi bi-list toggle-sidebar-btn"></i>
     </div>
   </header>
  <!-- ======= Sidebar ======= -->
@@ -56,18 +56,18 @@
 
   <main id="main" class="main">
     <div class="pagetitle">
-      <h1>Edit Pengguna</h1>
+      <h1>Edit Admin</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Data</li>
-          <li class="breadcrumb-item active">Edit Pengguna</li>
+          <li class="breadcrumb-item">Home</li>
+          <li class="breadcrumb-item">Data Admin</li>
+          <li class="breadcrumb-item active">Edit Admin</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
     <div class="container mt-5 form-container">
-      <h2 class="mt-5">Edit Data Pengguna</h2>
+      <h2 class="mt-5">Edit Admin</h2>
 
       @if ($errors->any())
         <div class="alert alert-danger">

@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{asset('admin/assets/img/logosd.png')}} " rel="icon">
+  <link href="{{asset('admin/assets/img/logosd.png')}} " rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -39,13 +39,12 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
-
-    <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+<div class="d-flex align-items-center justify-content-between">
+      <i class="bi bi-list toggle-sidebar-btn me-3"></i>
+      <a href="" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">SD Negeri Rau</span>
       </a>
-      <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
   </header><!-- End Header -->
 
@@ -56,7 +55,7 @@
     <h1>Data Kegiatan</h1>
     <nav>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item">Home</li>
         <li class="breadcrumb-item">Data</li>
         <li class="breadcrumb-item active">Data Kegiatan</li>
       </ol>
@@ -79,7 +78,7 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>Media</th>
+                    <th>Gambar</th>
                     <th>Keterangan</th>
                     <th>Tanggal</th>
                     <th>Aksi</th>
@@ -101,11 +100,29 @@
                         <td>{{ $kegiatan->hari }}, {{ $kegiatan->tanggal }}-{{ $kegiatan->bulan }}-{{ $kegiatan->tahun }}</td>
                         <td>
                             <a href="{{ route('kegiatan.edit', $kegiatan->id) }}" class="btn btn-warning btn-sm">Edit</a>
-                            <a href="{{ route('kegiatan.show', $kegiatan->id) }}" class="btn btn-info btn-sm">Show</a>
                             <form action="{{ route('kegiatan.destroy', $kegiatan->id) }}" method="POST" style="display:inline;">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger btn-sm">Hapus</button>
+                              <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalHapusKegiatan{{ $kegiatan->id }}">Hapus</button>
+                                <div class="modal fade" id="modalHapusKegiatan{{ $kegiatan->id }}" tabindex="-1" aria-labelledby="modalLabelKegiatan{{ $kegiatan->id }}" aria-hidden="true">
+                                  <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header bg-danger text-white">
+                                      <h5 class="modal-title" id="modalLabelKegiatan{{ $kegiatan->id }}">Konfirmasi Hapus</h5>
+                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      Apakah Anda yakin ingin menghapus data kegiatan ini?
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                                      <form action="{{ route('kegiatan.destroy', $kegiatan->id) }}" method="POST" class="d-inline">
+                                          @csrf
+                                          @method('DELETE')
+                                          <button type="submit" class="btn btn-danger">Ya, Hapus</button>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </form>
                         </td>
                     </tr>

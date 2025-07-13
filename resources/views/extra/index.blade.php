@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{asset('admin/assets/img/logosd.png')}} " rel="icon">
+  <link href="{{asset('admin/assets/img/logosd.png')}} " rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -41,11 +41,11 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <i class="bi bi-list toggle-sidebar-btn me-3"></i>
+      <a href="" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">SD Negeri Rau</span>
       </a>
-      <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
   </header><!-- End Header -->
 
@@ -53,12 +53,12 @@
 
   <main id="main" class="main">
   <div class="pagetitle">
-    <h1>Data Extra</h1>
+    <h1>Data Ekstrakulikuler</h1>
     <nav>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item">Home</li>
         <li class="breadcrumb-item">Data</li>
-        <li class="breadcrumb-item active">Data Extra</li>
+        <li class="breadcrumb-item active">Data Ekstrakulikuler</li>
       </ol>
     </nav>
   </div><!-- End Page Title -->
@@ -70,13 +70,13 @@
         <div class="card">
          
 <div class="container mt-5">
-    <h2>Data Ekstra</h2>
-    <a class="btn btn-success mb-3" href="{{ route('extra.create') }}">Tambah Ekstra</a>
+    <h2>Data Ekstrakulikuler</h2>
+    <a class="btn btn-primary mb-3" href="{{ route('extra.create') }}">Tambah Ekstra</a>
     <table class="table table-bordered">
         <thead>
             <tr>
-                <th>ID</th>
-                <th>Foto</th>
+                {{-- <th>ID</th> --}}
+                <th>Gambar</th>
                 <th>Nama</th>
                 <th>Keterangan</th>
                 <th>Hari</th>
@@ -86,18 +86,37 @@
         <tbody>
             @foreach($extras as $extra)
                 <tr>
-                    <td>{{ $extra->id }}</td>
+                    {{-- <td>{{ $extra->id }}</td> --}}
                     <td><img src="{{ asset('images/'.$extra->foto) }}" width="100"></td>
                     <td>{{ $extra->nama }}</td>
                     <td>{{ $extra->keterangan }}</td>
                     <td>{{ $extra->hari }}</td>
                     <td>
-                        <a class="btn btn-info" href="{{ route('extra.show', $extra->id) }}">Lihat</a>
-                        <a class="btn btn-primary" href="{{ route('extra.edit', $extra->id) }}">Edit</a>
+                        
+                        <a class="btn btn-sm btn-warning" href="{{ route('extra.edit', $extra->id) }}">Edit</a>
                         <form action="{{ route('extra.destroy', $extra->id) }}" method="POST" style="display:inline-block;">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" class="btn btn-danger">Hapus</button>
+                           <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#modalHapus{{ $extra->id }}">Hapus</button>
+                          <div class="modal fade" id="modalHapus{{ $extra->id }}" tabindex="-1" aria-labelledby="modalLabel{{ $extra->id }}" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header bg-danger text-white">
+                                  <h5 class="modal-title" id="modalLabel{{ $extra->id }}">Konfirmasi Hapus</h5>
+                                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                                </div>
+                                <div class="modal-body">
+                                  Apakah Anda yakin ingin menghapus data ekstrakulikuler ini?
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                                  <form action="{{ route('extra.destroy', $extra->id) }}" method="POST" class="d-inline">
+                                      @csrf
+                                      @method('DELETE')
+                                      <button type="submit" class="btn btn-danger">Ya, Hapus</button>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </form>
                     </td>
                 </tr>

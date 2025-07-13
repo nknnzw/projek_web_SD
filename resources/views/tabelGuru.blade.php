@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{asset('admin/assets/img/logosd.png')}} " rel="icon">
+  <link href="{{asset('admin/assets/img/logosd.png')}} " rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -40,11 +40,11 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <i class="bi bi-list toggle-sidebar-btn me-3"></i>
+      <a href="" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">SD Negeri Rau</span>
       </a>
-      <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
   </header><!-- End Header -->
 
@@ -56,7 +56,7 @@
       <h1>Data Guru</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item">Home</li>
           <li class="breadcrumb-item">Data</li>
           <li class="breadcrumb-item active">Data Guru</li>
         </ol>
@@ -98,13 +98,32 @@
                                 <td>{{ $post->jenis_kelamin }}</td>
                                 <td>{{ $post->jabatan }}</td>
                                 <td>{{ $post->status_kepegawaian }}</td>
-                                <td>
-                                    <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('tabelGuru.destroy', $post->id) }}" method="POST">
-                                      <a href="{{ route('tabelGuru.edit', $post->id) }}" class="btn btn-warning btn-sm">Edit</a>
-                                      @csrf
-                                      @method('DELETE')
-                                      <button type="submit" class="btn btn-sm btn-danger">Hapus</button>
-                                  </form>
+                                <td class="d-flex gap-2">
+                                    <a href="{{ route('tabelGuru.edit', $post->id) }}" class="btn btn-sm btn-warning">Edit</a>
+                                    <form action="{{ route('tabelGuru.destroy', $post->id) }}" method="POST" class="d-inline">
+                                       <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#modalHapus{{ $post->id }}">Hapus</button>
+                                       <div class="modal fade" id="modalHapus{{ $post->id }}" tabindex="-1" aria-labelledby="modalLabel{{ $post->id }}" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                            <div class="modal-header bg-danger text-white">
+                                              <h5 class="modal-title" id="modalLabel{{ $post->id }}">Konfirmasi Hapus</h5>
+                                              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                              Apakah Anda yakin ingin menghapus data guru ini?
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                                              <form action="{{ route('tabelGuru.destroy', $post->id) }}" method="POST" class="d-inline">
+                                                  @csrf
+                                                  @method('DELETE')
+                                                  <button type="submit" class="btn btn-danger">Ya, Hapus</button>
+                                              </form>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
                                 </td>
                             </tr>
                             @endforeach

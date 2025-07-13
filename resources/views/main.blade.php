@@ -10,13 +10,17 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{asset('admin/assets/img/logosd.png')}} " rel="icon">
+  <link href="{{asset('admin/assets/img/logosd.png')}} " rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 
   <!-- Vendor CSS Files -->
   <link rel="stylesheet" href="{{asset('style/assets/vendor/bootstrap/css/bootstrap.min.css')}}">
@@ -28,13 +32,7 @@
   <!-- Main CSS File -->
   <link rel="stylesheet" href="{{asset('style/assets/css/main.css')}}">
 
-  <!-- =======================================================
-  * Template Name: Append
-  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
-  * Updated: Jun 27 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  
 </head>
 <style>
   .features-img-bg img {
@@ -65,8 +63,8 @@
   flex-direction: column;
   justify-content: space-between;
   height: 350px;
-  width: 250px; /* Set a fixed width */
-  margin: 10px; /* Add margin for spacing between cards */
+  width: 250px; 
+  margin: 10px; 
 }
 
 .member:hover {
@@ -77,7 +75,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 250px; /* Set a fixed height for consistency */
+  height: 250px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,13 +84,13 @@
 .member-img img {
   transition: 0.3s;
   width: auto;
-  height: 100%; /* Ensure all images fit within the fixed height */
+  height: 100%; 
   object-fit: cover;
 }
 
 .member-info {
   padding: 10px 20px;
-  flex-grow: 1; /* Ensures the info section grows to fill space */
+  flex-grow: 1; 
 }
 
 .member-info h4 {
@@ -106,7 +104,7 @@
   display: block;
   font-size: 14px;
   color: #777;
-  word-wrap: break-word; /* Ensure text does not overflow */
+  word-wrap: break-word; 
 }
 
   </style>
@@ -117,7 +115,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <img src="{{asset('style/assets/img/logosd.png')}}" alt="Deskripsi Gambar" style="margin-right: 10px;">
@@ -126,20 +124,19 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a class="nav-link scrollto active" href="#home">Home</a></li>
-          <li><a class="nav-link scrollto" href="#tentang">Tentang</a></li>
+          <li><a class="nav-link scrollto active" href="#beranda">Beranda</a></li>
+          <li><a class="nav-link scrollto" href="#visimisi">Visi Misi </a></li>
           <li><a class="nav-link scrollto" href="#jadwal">Jadwal</a></li>
           <li><a class="nav-link scrollto " href="#ekstrakulikuler">Ekstrakulikuler</a></li>
           <li><a class="nav-link scrollto" href="#kegiatan">Kegiatan</a></li>
           <li><a class="nav-link scrollto" href="#prestasi">Prestasi</a></li>
-          <li><a class="nav-link scrollto" href="#struktur">Struktur</a></li>
           <li><a class="nav-link scrollto" href="#guru">Guru</a></li>
           <li><a class="nav-link scrollto" href="#kontak">Kontak</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#about">Daftar</a>
+      
 
     </div>
   </header>
@@ -147,7 +144,7 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="home" class="hero section dark-background">
+    <section id="beranda" class="hero section dark-background">
 
       <img src="{{asset('style/assets/img/s1.jpeg')}}" alt="" data-aos="fade-in">
 
@@ -158,7 +155,7 @@
               Selamat Datang di Website SD Negeri Rau
             </h2>
             <p data-aos="fade-up" data-aos-delay="200" style="margin-top: 20px;">
-              Temukan informasi terbaru tentang kegiatan sekolah dan program pendidikan kami yang inovatif. Mari bersama-sama menciptakan masa depan cerah untuk generasi penerus di SD N Rau.
+              Temukan informasi terbaru tentang kegiatan sekolah dan program pendidikan kami yang inovatif. Mari bersama-sama menciptakan masa depan cerah untuk generasi penerus.
             </p>
           </div>
         </div>
@@ -169,13 +166,13 @@
     
 
     <!-- About Section -->
-    <section id="tentang" class="tentang section light-background">
+    <section id="visimisi" class="tentang section light-background">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row align-items-xl-center gy-5">
 
           <div class="section-title" data-aos="zoom-out">
-            <h2>Tentang Kami</h2>
+            <h2>SD Negeri Rau</h2>
             <p>Visi Misi & Tujuan</p>
           </div>
   
@@ -202,66 +199,8 @@
               </ul>
             </div>
             </div>
-            
-              
-              <div class="row gy-4">
-                <section id="faq" class="faq section">
-                  <div class="container">
-                    <div class="row gy-4">
-                      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="content px-xl-5">
-                          <h3><strong>F.A.Q</strong></h3>
-                          <p>
-                            Temukan jawaban dari pertanyaan-pertanyaan yang sering diajukan tentang SD Negeri Rau.
-                        
-                        </div>
-                      </div>
-            
-                      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            
-                        <div class="faq-container">
-                          <div class="faq-item">
-                            <h3><span class="num">1.</span> <span>Di mana alamat SD Negeri Rau?</span></h3>
-                            <div class="faq-content">
-                              <p> Jln. Balai Desa Rau RT.01 RW.03 Kecamatan Kedung, Kabupaten Jepara, 59463.</p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                          </div><!-- End Faq item-->
-            
-                          <div class="faq-item">
-                            <h3><span class="num">2.</span> <span>Apa akreditasi SD Negeri Rau?</span></h3>
-                            <div class="faq-content">
-                              <p> SD Negeri Rau mendapatkan status akreditasi A dari BAN-S/M (Badan Akreditasi Nasional) Sekolah/Madrasah.</p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                          </div><!-- End Faq item-->
-            
-                          <div class="faq-item">
-                            <h3><span class="num">3.</span> <span>Apa saja program unggulan di SD Negeri Rau?</span></h3>
-                            <div class="faq-content">
-                              <p>SD Negeri Rau memiliki beberapa program unggulan, antara lain Ekstrakurikuler Pramuka dan Ekstrakulikuler Tari. Program-program ini bertujuan untuk mengembangkan keterampilan, karakter dan pengalaman siswa.</p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                          </div><!-- End Faq item-->
-            
-                          <div class="faq-item">
-                            <h3><span class="num">4.</span> <span>Bagaimana cara mendaftar di SD Negeri Rau?</span></h3>
-                            <div class="faq-content">
-                                <p>Untuk mendaftar di SD Negeri Rau, calon siswa dapat mengunjungi kantor sekolah untuk mengisi formulir pendaftaran. Informasi lebih lanjut mengenai persyaratan dan prosedur pendaftaran dapat ditemukan di website resmi SD Negeri Rau atau menghubungi bagian administrasi sekolah.</p>
-                            </div>
-                            <i class="faq-toggle bi bi-chevron-right"></i>
-                        </div><!-- End Faq item-->
-            
-                        </div>
-            
-                      </div>
-            
-            
-          </div>
-
         </div>
-      </div>
-
+      </div>      
     </section><!-- /About Section -->
 
     <!-- jadwal Section -->
@@ -287,205 +226,197 @@
     
     </section><!-- /jadwal Section -->
 
-    <!-- ekstrakulikuler Section -->
-    <section id="ekstrakulikuler" class="portfolio section">
+  <!-- ekstrakulikuler Section -->
+<section id="ekstrakulikuler" class="portfolio section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Ekstrakulikuler</h2>
+    <p>Ekstrakulikuler SD Negeri Rau</p>
+  </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Ekstrakulikuler</h2>
-        <p>Ekstrakulikuler SD Negeri Rau</p>
-      </div><!-- End Section Title -->
-    
-      <div class="container">
-    
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-    
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-pramuka">Pramuka</li>
-            <li data-filter=".filter-tari">Tari</li>
-          </ul>
-    
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+  <div class="container">
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">Semua</li>
+        <li data-filter=".filter-pramuka">Pramuka</li>
+        <li data-filter=".filter-tari">Tari</li>
+      </ul>
 
-            @foreach ($ekstrakulikuler as $eks)
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-{{ $eks->nama }}">
-                <img src="{{asset('images/' . $eks->foto)}}" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>{{ $eks->keterangan }}</h4>
-                  <p></p>
-                  <a href="{{asset('images/' . $eks->foto)}}" title="{{ $eks->keterangan . ' - ' . $eks->hari }}" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            @endforeach
-{{--     
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pramuka">
-              <img src="{{asset('style/assets/img/dokumentasi/pra2.jpg')}}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                  <h4>Eskrakulikuler Pramuka</h4>
-                  <p></p>
-                  <a href="{{asset('style/assets/img/dokumentasi/pra2.jpg')}}" title="Ekstrakulikuler Pramuka memberikan siswa kesempatan untuk mengembangkan keterampilan survival, teamwork, dan tanggung jawab melalui berbagai kegiatan seperti orienteering, memasak di alam terbuka, dan pembuatan perangkat pramuka." data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div>
-          
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pramuka">
-              <img src="{{asset('style/assets/img/dokumentasi/pra3.jpg')}}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Eskrakulikuler Pramuka</h4>
-                <p></p>
-                <a href="{{asset('style/assets/img/dokumentasi/pra3.jpg')}}" title="Melalui esktrakurikuler Pramuka, siswa dapat menemukan potensi diri mereka dalam lingkungan alam, belajar tentang keberagaman hayati, serta membangun karakter tangguh dan mandiri melalui eksplorasi dan pengalaman langsung di alam bebas." data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+        @foreach ($ekstrakulikuler as $eks)
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-{{ $eks->nama }}">
+            <div class="card card-hover rounded shadow overflow-hidden h-100">
+              <img 
+                src="{{ asset('images/' . $eks->foto) }}" 
+                class="img-fluid w-100" 
+                style="height:250px; object-fit:cover;" 
+                alt="{{ $eks->keterangan }}">
+
+              <div class="card-body">
+                <h5 class="card-title">{{ $eks->keterangan }}</h5>
+                <p class="card-text" style="font-size: 0.9rem;">Hari: {{ $eks->hari }}</p>
+                <a href="{{ asset('images/' . $eks->foto) }}"
+                   title="{{ $eks->keterangan }} - {{ $eks->hari }}"
+                   data-gallery="portfolio-gallery-ekstra"
+                   class="glightbox btn btn-outline-primary btn-sm">
+                  <i class="bi bi-zoom-in"></i> Lihat Gambar
+                </a>
               </div>
             </div>
-    
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tari">
-              <img src="{{asset('style/assets/img/dokumentasi/tar1.jpg')}}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Ekstrakulikuler Tari</h4>
-                <p></p>
-                <a href="{{asset('style/assets/img/dokumentasi/tar1.jpg')}}" title="Eskrakulikuler tari adalah wadah bagi siswa untuk mengekspresikan kreativitas dan memperdalam pemahaman mereka tentang seni pertunjukan. Melalui latihan rutin dan pertunjukan, siswa mengembangkan keahlian teknis dan menghargai keindahan gerakan dalam berbagai jenis tari." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div>
-    
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tari">
-              <img src="{{asset('style/assets/img/dokumentasi/tar2.jpg')}}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Ekstrakulikuler Tari</h4>
-                <p></p>
-                <a href="{{asset('style/assets/img/dokumentasi/tar2.jpg')}}" title="Program esktrakurikuler tari menyediakan platform bagi siswa untuk belajar berbagai genre tari, mulai dari balet klasik hingga tarian modern. Selain itu, siswa juga memperoleh pemahaman tentang sejarah dan budaya di balik setiap gerakan dan koreografi." data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-              </div>
-    
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tari">
-              <img src="{{asset('style/assets/img/dokumentasi/tar3.jpg')}}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Ekstrakulikuler Tari</h4>
-                <p></p>
-                <a href="{{asset('style/assets/img/dokumentasi/tar3.jpg')}}" title="Dalam esktrakurikuler tari, siswa belajar menghargai kerja tim, disiplin, dan dedikasi yang diperlukan untuk mencapai tingkat keunggulan dalam seni tari. Melalui latihan intensif dan penampilan di depan publik, mereka membangun rasa percaya diri dan kepekaan artistik yang mendalam." data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              </div>
-            </div> --}}
-    
           </div>
-    
-        </div>
-    
+        @endforeach
       </div>
-    
-    </section><!-- /ekstrakulikuler Section -->
-    
+    </div>
+  </div>
+</section>
+
     
     {{-- Kegiatan section --}}
-    <section id="kegiatan" class="portfolio section mb-3">
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Kegiatan</h2>
-          <p>Kegiatan Terbaru SD Negeri Rau</p>
-        </div>
-        <div class="container">
-            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-    
-              <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                <li data-filter="*" class="filter-active">All</li>
-                @foreach ($kegiatan->keys() as $k)
-                  <li data-filter=".filter-@getNamaBulan($k)">@getNamaBulan($k)</li>
-                @endforeach
-              </ul>
+@php
+  // Fungsi untuk cek apakah media adalah video
+  function isVideo($file) {
+    $ext = pathinfo($file, PATHINFO_EXTENSION);
+    return in_array(strtolower($ext), ['mp4', 'webm', 'ogg']);
+  }
 
-              <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-                @foreach ($kegiatan as $bulan => $value)
-                  @foreach ($value as $v)
-                    <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-@getNamaBulan($bulan)">
-                      <img style="max-height:250px;min-height:250px;" src="{{asset('media/' . $v->media)}}" class="img-fluid" alt="">
-                      <div class="portfolio-info">
-                        <h4>{{ $v->keterangan }}</h4>
-                        <p></p>
-                        <a href="{{asset('media/' . $v->media)}}"
-                          data-gallery="portfolio-gallery-app"
-                          class="glightbox preview-link">
-                          <i class="bi bi-zoom-in"></i>
-                        </a>
-                      </div>
-                    </div>
-                  @endforeach
-                @endforeach
-              </div>
-            </div>
-        </div>
-    </section>
+  
+  function getNamaBulan($bulanAngka) {
+    $bulanIndo = [
+      1 => 'Januari', 2 => 'Februari', 3 => 'Maret', 4 => 'April',
+      5 => 'Mei', 6 => 'Juni', 7 => 'Juli', 8 => 'Agustus',
+      9 => 'September', 10 => 'Oktober', 11 => 'November', 12 => 'Desember'
+    ];
+    return $bulanIndo[(int)$bulanAngka] ?? $bulanAngka;
+  }
+@endphp
 
-    {{-- Prestasi Section --}}
-    <section id="prestasi" class="portfolio section mb-3">
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Prestasi</h2>
-          <p>Prestasi SD Negeri Rau</p>
-        </div>
+<section id="kegiatan" class="portfolio section mb-3">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Kegiatan</h2>
+    <p>Kegiatan SD Negeri Rau</p>
+  </div>
 
-        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-          @foreach ($prestasi as $pr)
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
-                <img style="max-height:250px;min-height:250px;" src="{{asset('images/' . $pr->foto)}}" class="img-fluid" alt="{{ $pr->nama }}">
-                <div class="portfolio-info">
-                  <h4>{{ $pr->keterangan }}</h4>
-                  <p></p>
-                  <a href="{{asset('media/' . $pr->foto)}}"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link">
-                    <i class="bi bi-zoom-in"></i>
+  <div class="container">
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <!-- Filter Bulan -->
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">Semua</li>
+        @foreach ($kegiatan->keys() as $k)
+          <li data-filter=".filter-{{ getNamaBulan($k) }}">{{ getNamaBulan($k) }}</li>
+        @endforeach
+      </ul>
+
+      <!-- Daftar Kegiatan -->
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+        @foreach ($kegiatan as $bulan => $value)
+          @foreach ($value as $v)
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-{{ getNamaBulan($bulan) }}">
+              <div class="card card-hover rounded shadow overflow-hidden h-100">
+
+                {{-- Gambar atau Video --}}
+                @if (isVideo($v->media))
+                  <video class="w-100" height="250" style="object-fit: cover;" controls muted>
+                    <source src="{{ asset('media/' . $v->media) }}" type="video/mp4">
+                    Browser tidak mendukung video.
+                  </video>
+                @else
+                  <img 
+                    src="{{ asset('media/' . $v->media) }}" 
+                    class="img-fluid w-100" 
+                    style="height:250px; object-fit:cover;" 
+                    alt="{{ $v->keterangan }}">
+                @endif
+
+                {{-- Keterangan --}}
+                <div class="card-body">
+                  <h5 class="card-title">{{ $v->keterangan }}</h5>
+                  <p class="card-text" style="font-size: 0.9rem;">
+                    {{ $v->hari }}, {{ $v->tanggal }} {{ getNamaBulan($v->bulan) }} {{ $v->tahun }}
+                  </p>
+
+                  <a href="{{ asset('media/' . $v->media) }}"
+                     title="{{ $v->keterangan }} - {{ $v->hari }}, {{ $v->tanggal }} {{ getNamaBulan($v->bulan) }} {{ $v->tahun }}"
+                     data-gallery="portfolio-gallery-kegiatan"
+                     class="glightbox btn btn-outline-primary btn-sm">
+                    <i class="bi bi-zoom-in"></i> {{ isVideo($v->media) ? 'Lihat Video' : 'Lihat Gambar' }}
                   </a>
                 </div>
+
               </div>
-          @endforeach
-        </div>
-    </section>
-
-    <!-- struktur Section -->
-    <section id="struktur" class="struktur section mb-3">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Struktur</h2>
-        <p>Struktur Organisasi Sekolah</p>
-      </div><!-- End Section Title -->
-      <div class="container" data-aos="zoom-in" data-aos-delay="100">
-        <div class="row g-4">
-          <!-- <div class="col-lg-4 d-flex justify-content-center align-items-center" style="display: flex; justify-content: center; align-items: center;"> -->
-            <div class="portfolio-img col-12 col-md-8 col-lg-8" style="display: flex; justify-content: center; align-items: center; text-align: center;">
-              @if (isset($struktur))
-                <img src="{{asset('images/' . $struktur->foto )}}" class="img-fluid" alt="">
-              @else
-                <img src="{{asset('style/assets/img/dokumentasi/struktur.png')}}" class="img-fluid" alt="">
-              @endif
             </div>
-          <!-- </div> -->
-        </div>
+          @endforeach
+        @endforeach
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
+{{-- Prestasi section --}}
+<section id="prestasi" class="portfolio section mb-3">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Prestasi</h2>
+    <p>Prestasi SD Negeri Rau</p>
+  </div>
+
+  <div class="container">
+    <div class="row gy-4 isotope-container">
+      @foreach ($prestasi as $pr)
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item" data-aos="fade-up">
+          <div class="card rounded shadow overflow-hidden h-100">
+            <img 
+              src="{{ asset('images/' . $pr->foto) }}" 
+              class="img-fluid w-100"
+              style="height: 250px; object-fit: cover;"
+              alt="{{ $pr->nama }}">
+
+            <div class="card-body">
+              <h5 class="card-title">{{ $pr->nama }}</h5>
+              <p class="card-text" style="font-size: 0.9rem;">{{ $pr->keterangan }}</p>
+              <a href="{{ asset('images/' . $pr->foto) }}"
+                 title="{{ $pr->nama }} - {{ $pr->keterangan }}"
+                 data-gallery="portfolio-gallery-prestasi"
+                 class="glightbox btn btn-outline-primary btn-sm">
+                <i class="bi bi-zoom-in"></i> Lihat Gambar
+              </a>
+            </div>
+          </div>
+        </div>
+      @endforeach
+    </div>
+  </div>
+</section>
+
+
       
     <!-- guru Section -->
-    <section id="guru" class="guru section mb-2">
+   <section id="guru" class="guru section mb-2">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Daftar Guru</h2>
+    <p>Daftar Guru SD Negeri Rau</p>
+  </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Daftar Guru</h2>
-        <p>Daftar Guru SD N Rau</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-        <div class="row">
-          @foreach($guru as $d)
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-4">
-            <div class="member" data-aos="fade-up">
+  <div class="container">
+    <div class="row">
+      @foreach($guru as $d)
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-4">
+          <div class="shadow rounded w-100 p-2 bg-body" data-aos="fade-up">
+            <div class="member">
               <div class="member-img">
-                <img src="{{ asset('/storage/posts/'.$d->foto) }}" class="img-fluid" alt="{{$d->nama}}">
+                <img src="{{ asset('/storage/posts/'.$d->foto) }}" class="img-fluid" alt="{{ $d->nama }}">
               </div>
               <div class="member-info text-center">
-                <h4>{{$d->nama}}</h4>
-                <span>{{$d->jabatan}}</span>
+                <h5 class="mb-1">{{ $d->nama }}</h5>
+                <p style="font-size: 0.9rem;">{{ $d->jabatan }}</p>
               </div>
             </div>
           </div>
-          @endforeach
         </div>
-      </div>
-    </section><!-- / guru Section -->
+      @endforeach
+    </div>
+  </div>
+</section>
+
+
 
     <!-- Contact Section -->
     <section id="kontak" class="contact section">
@@ -493,7 +424,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Kontak</h2>
-        <p>Kontak & Alamat</p>
+        <p>Kontak & Alamat SD Negeri Rau</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -568,10 +499,10 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="" class="logo d-flex align-items-center">
             <span class="sitename">SD Negeri Rau</span>
           </a>
-          <p>Temukan informasi terbaru tentang kegiatan sekolah dan program pendidikan kami yang inovatif. Mari bersama-sama menciptakan masa depan cerah untuk generasi penerus di SD N Rau.</p>
+          <p>Temukan informasi terbaru tentang kegiatan sekolah dan program pendidikan kami yang inovatif. Mari bersama-sama menciptakan masa depan cerah untuk generasi penerus.</p>
           <div class="social-links d-flex mt-4">
             <a href="https://www.facebook.com/SdnRau"><i class="bi bi-facebook"></i></a>
             <a href="https://www.youtube.com/@sdnrau7390"><i class="bi bi-youtube"></i></a>
@@ -579,34 +510,24 @@
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Menu</h4>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#visimisi">Visi Misi</a></li>
             <li><a href="#jadwal">Jadwal</a></li>
             <li><a href="#ekstrakulikuler">Ekstrakulikuler</a></li>
-            <li><a href="#struktur">Struktur</a></li>
-            <li><a href="#guru">Guru</a></li>
-            <li><a href="#kontak">Kontak</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Layanan Kami</h4>
-          <ul>
-            <li><a href="#">Kurikulum</a></li>
-            <li><a href="#">Fasilitas</a></li>
-            <li><a href="#">Prestasi</a></li>
-            <li><a href="#">Kegiatan Siswa</a></li>
-            <li><a href="#">Bimbingan Konseling</a></li>
+            <li><a class="nav-link scrollto" href="#kegiatan">Kegiatan</a></li>
+            <li><a class="nav-link scrollto" href="#prestasi">Prestasi</a></li>
+            <li><a class="nav-link scrollto" href="#guru">Guru</a></li>
+            <li><a class="nav-link scrollto" href="#kontak">Kontak</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
+          <h4>Kontak Kami</h4>
           <p>Jln. Balai Desa Rau RT.01 RW.03</p>
           <p>Kecamatan Kedung, Kabupaten Jepara, 59463</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+62 821 3323 0003</span></p>
+          <p class="mt-4"><strong>Telepon:</strong> <span>+62 821 3323 0003</span></p>
           <p><strong>Email:</strong> <span>sd_negeri_rau@yahoo.co.id</span></p>
         </div>
 
@@ -644,6 +565,8 @@
 
   <!-- Main JS File -->
   <script src="{{asset('style/assets/js/main.js')}}"></script>
+  <script> lightbox = GLightbox({selector: '.glightbox'});</script>
+  <script>AOS.init();</script>
 
 </body>
 

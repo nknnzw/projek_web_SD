@@ -67,6 +67,7 @@ Route::resource('kegiatan', KegiatanController::class);
 Route::resource('prestasi', PrestasiController::class);
 
 
+
 //Route::get('ekstra/ekstraa', [ekstraController::class, 'ekstraa'])->name('ekstra.ekstraa');
 //Route::post('ekstra', [ekstraController::class, 'store'])->name('ekstra.store');
 //Route::get('ekstraa', [ekstraController::class, 'index'])->name('ekstraa.index');

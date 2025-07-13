@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{asset('admin/assets/img/logosd.png')}} " rel="icon">
+  <link href="{{asset('admin/assets/img/logosd.png')}} " rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -41,11 +41,11 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <i class="bi bi-list toggle-sidebar-btn me-3"></i>
+      <a href="" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">SD Negeri Rau</span>
       </a>
-      <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
   </header><!-- End Header -->
 
@@ -55,12 +55,12 @@
 
   <main id="main" class="main">
   <div class="pagetitle">
-    <h1>Data Prestasi</h1>
+    <h1>Data Dashboard</h1>
     <nav>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item">Home</li>
         <li class="breadcrumb-item">Data Dashboard</li>
-        <li class="breadcrumb-item active">Edit Data</li>
+        <li class="breadcrumb-item active">Edit Data Dashboard</li>
       </ol>
     </nav>
   </div><!-- End Page Title -->
@@ -69,7 +69,7 @@
     <div class="row">
       <div class="col-lg-12">
     <div class="container mt-5">
-        <h1 class="mb-4">Edit Data</h1>
+        <h1 class="mb-4">Edit Data Dashboard</h1>
 
         @if ($errors->any())
             <div class="alert alert-danger">

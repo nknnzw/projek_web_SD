@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Data Guru - SD Negeri Rau</title>
+  <title>Dashboard - SD N Rau</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
  <!-- Favicons -->
- <link href="{{asset('admin/assets/img/favicon.png')}} " rel="icon">
- <link href="{{asset('admin/assets/img/apple-touch-icon.png')}} " rel="apple-touch-icon">
+<link href="{{asset('admin/assets/img/logosd.png')}} " rel="icon">
+  <link href="{{asset('admin/assets/img/logosd.png')}} " rel="apple-touch-icon">
 
  <!-- Google Fonts -->
  <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -44,11 +44,11 @@
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <i class="bi bi-list toggle-sidebar-btn me-3"></i>
+      <a href="" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">SD Negeri Rau</span>
       </a>
-      <i class="bi bi-list toggle-sidebar-btn"></i>
     </div>
   </header>
  <!-- ======= Sidebar ======= -->
@@ -59,7 +59,7 @@
       <h1>Data Admin</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item">Home</li>
           <li class="breadcrumb-item">Data</li>
           <li class="breadcrumb-item active">Data Admin</li>
         </ol>
@@ -79,7 +79,7 @@
         <table class="table table-bordered ">
           <thead class="thead-dark">
             <tr>
-              <th>ID</th>
+              {{--<th>ID</th>--}}
               <th>Nama</th>
               <th>Email</th>
               <th>Aksi</th>
@@ -88,15 +88,34 @@
           <tbody>
             @foreach($users as $user)
               <tr>
-                <td>{{ $user->id }}</td>
+                {{--<td>{{ $user->id }}</td>--}}
                 <td>{{ $user->name }}</td>
                 <td>{{ $user->email }}</td>
                 <td>
                   <a href="{{ route('user.edit', $user->id) }}" class="btn btn-warning btn-sm">Edit</a>
                   <form action="{{ route('user.destroy', $user->id) }}" method="POST" style="display:inline;">
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin?')">Hapus</button>
+                   <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalHapusUser{{ $user->id }}">Hapus</button>
+                    <div class="modal fade" id="modalHapusUser{{ $user->id }}" tabindex="-1" aria-labelledby="modalLabelUser{{ $user->id }}" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header bg-danger text-white">
+                            <h5 class="modal-title" id="modalLabelUser{{ $user->id }}">Konfirmasi Hapus</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                          </div>
+                          <div class="modal-body">
+                            Apakah Anda yakin ingin menghapus data admin?
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                            <form action="{{ route('user.destroy', $user->id) }}" method="POST" class="d-inline">
+                              @csrf
+                              @method('DELETE')
+                              <button type="submit" class="btn btn-danger">Ya, Hapus</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </form>
                 </td>
               </tr>

@@ -22,14 +22,11 @@
       </li>
         <li>
         <a href="{{ route('extra.index') }}" >
-            <i class="bi bi-circle"></i><span>Data Extra</span>
+            <i class="bi bi-circle"></i><span>Data Ekstrakulikuler</span>
         </a>
         </li>
         <li>
         <li>
-        <a href="{{ route('struktur.index') }}" >
-            <i class="bi bi-circle"></i><span>Data Struktur</span>
-        </a>
         </li>
         <li>
         <li>

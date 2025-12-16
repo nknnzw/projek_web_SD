@@ -76,7 +76,7 @@
         
                     <div class="form-group">
                         <label for="foto">Gambar:</label><br>
-                        <img src="{{ asset('/storage/posts/'.$post->foto) }}" alt="Gambar Guru" class="img-fluid mb-3" width="100">
+                        <img src="{{ asset('storage/'.$post->foto) }}" alt="Gambar Guru" class="img-fluid mb-3" width="100">
                         <input type="file" class="form-control" name="foto">
                     </div>
         

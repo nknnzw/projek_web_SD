@@ -272,22 +272,26 @@
     
     {{-- Kegiatan section --}}
 @php
-  // Fungsi untuk cek apakah media adalah video
-  function isVideo($file) {
-    $ext = pathinfo($file, PATHINFO_EXTENSION);
-    return in_array(strtolower($ext), ['mp4', 'webm', 'ogg']);
+  if (!function_exists('isVideo')) {
+    function isVideo($file) {
+      $ext = pathinfo($file, PATHINFO_EXTENSION);
+      return in_array(strtolower($ext), ['mp4', 'webm', 'ogg']);
+    }
   }
 
   
-  function getNamaBulan($bulanAngka) {
-    $bulanIndo = [
-      1 => 'Januari', 2 => 'Februari', 3 => 'Maret', 4 => 'April',
-      5 => 'Mei', 6 => 'Juni', 7 => 'Juli', 8 => 'Agustus',
-      9 => 'September', 10 => 'Oktober', 11 => 'November', 12 => 'Desember'
-    ];
-    return $bulanIndo[(int)$bulanAngka] ?? $bulanAngka;
-  }
-@endphp
+ 
+    if (!function_exists('getNamaBulan')) {
+        function getNamaBulan($bulanAngka) {
+            $bulanIndo = [
+                1 => 'Januari', 2 => 'Februari', 3 => 'Maret', 4 => 'April',
+                5 => 'Mei', 6 => 'Juni', 7 => 'Juli', 8 => 'Agustus',
+                9 => 'September', 10 => 'Oktober', 11 => 'November', 12 => 'Desember'
+            ];
+            return $bulanIndo[(int)$bulanAngka] ?? $bulanAngka;
+        }
+    }
+    @endphp
 
 <section id="kegiatan" class="portfolio section mb-3">
   <div class="container section-title" data-aos="fade-up">
@@ -388,8 +392,8 @@
 
 
       
-    <!-- guru Section -->
-   <section id="guru" class="guru section mb-2">
+    <!-- Guru Section -->
+<section id="guru" class="guru section mb-2">
   <div class="container section-title" data-aos="fade-up">
     <h2>Daftar Guru</h2>
     <p>Daftar Guru SD Negeri Rau</p>
@@ -397,12 +401,14 @@
 
   <div class="container">
     <div class="row">
-      @foreach($guru as $d)
+      @foreach ($guru as $d)
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch mb-4">
           <div class="shadow rounded w-100 p-2 bg-body" data-aos="fade-up">
             <div class="member">
               <div class="member-img">
-                <img src="{{ asset('/storage/posts/'.$d->foto) }}" class="img-fluid" alt="{{ $d->nama }}">
+                <img src="{{ asset('images/'.$d->foto) }}"
+                     class="img-fluid"
+                     alt="{{ $d->nama }}">
               </div>
               <div class="member-info text-center">
                 <h5 class="mb-1">{{ $d->nama }}</h5>
@@ -415,6 +421,7 @@
     </div>
   </div>
 </section>
+
 
 
 

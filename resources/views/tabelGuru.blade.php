@@ -64,79 +64,77 @@
     </div><!-- End Page Title -->
 
     <section class="section">
-      <div class="row">
-        <div class="col-lg-12">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="container mt-5">
+          <h2>Daftar Guru</h2>
 
-          <div class="card">
-           
-                  <div class="container mt-5">
-                    <h2>Daftar Guru</h2>
-                    <a href="{{ route('tabelGuru.create') }}" class="btn btn-primary mb-3">Tambah Guru</a>
-                    @if (session('success'))
-                        <div class="alert alert-success">{{ session('success') }}</div>
-                    @endif
-                    <table class="table table-bordered table-striped">
-                        <thead class="thead">
-                            <tr>
-                                <th>Gambar</th>
-                                <th>Nama</th>
-                                <th>NIP</th>
-                                <th>Tanggal Lahir</th>
-                                <th>Jenis Kelamin</th>
-                                <th>Jabatan</th>
-                                <th>Status Kepegawaian</th>
-                                <th>Aksi</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($posts as $post)
-                            <tr>
-                                <td><img src="{{ asset('/storage/posts/'.$post->foto) }}" alt="Gambar Guru" class="img-fluid" width="100"></td>
-                                <td>{{ $post->nama }}</td>
-                                <td>{{ $post->nip }}</td>
-                                <td>{{ $post->tanggal_lahir }}</td>
-                                <td>{{ $post->jenis_kelamin }}</td>
-                                <td>{{ $post->jabatan }}</td>
-                                <td>{{ $post->status_kepegawaian }}</td>
-                                <td class="d-flex gap-2">
-                                    <a href="{{ route('tabelGuru.edit', $post->id) }}" class="btn btn-sm btn-warning">Edit</a>
-                                    <form action="{{ route('tabelGuru.destroy', $post->id) }}" method="POST" class="d-inline">
-                                       <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#modalHapus{{ $post->id }}">Hapus</button>
-                                       <div class="modal fade" id="modalHapus{{ $post->id }}" tabindex="-1" aria-labelledby="modalLabel{{ $post->id }}" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                          <div class="modal-content">
-                                            <div class="modal-header bg-danger text-white">
-                                              <h5 class="modal-title" id="modalLabel{{ $post->id }}">Konfirmasi Hapus</h5>
-                                              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                              Apakah Anda yakin ingin menghapus data guru ini?
-                                            </div>
-                                            <div class="modal-footer">
-                                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                                              <form action="{{ route('tabelGuru.destroy', $post->id) }}" method="POST" class="d-inline">
-                                                  @csrf
-                                                  @method('DELETE')
-                                                  <button type="submit" class="btn btn-danger">Ya, Hapus</button>
-                                              </form>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </form>
-                                </td>
-                            </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-                </div>
+          <a href="{{ route('tabelGuru.create') }}" class="btn btn-primary mb-3">
+            Tambah Guru
+          </a>
 
+          @if (session('success'))
+            <div class="alert alert-success">
+              {{ session('success') }}
             </div>
-          </div>
+          @endif
+
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Gambar</th>
+                <th>Nama</th>
+                <th>NIP</th>
+                <th>Tanggal Lahir</th>
+                <th>Jenis Kelamin</th>
+                <th>Jabatan</th>
+                <th>Status Kepegawaian</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              @foreach ($posts as $post)
+                <tr>
+                  <td>
+                    <img src="{{ asset('images/'.$post->foto) }}"
+                         alt="Gambar Guru"
+                         width="100"
+                         class="img-fluid">
+                  </td>
+                  <td>{{ $post->nama }}</td>
+                  <td>{{ $post->nip }}</td>
+                  <td>{{ $post->tanggal_lahir }}</td>
+                  <td>{{ $post->jenis_kelamin }}</td>
+                  <td>{{ $post->jabatan }}</td>
+                  <td>{{ $post->status_kepegawaian }}</td>
+                  <td>
+                    <a href="{{ route('tabelGuru.edit', $post->id) }}"
+                       class="btn btn-sm btn-warning">Edit</a>
+
+                    <form action="{{ route('tabelGuru.destroy', $post->id) }}"
+                          method="POST"
+                          class="d-inline">
+                      @csrf
+                      @method('DELETE')
+                      <button type="submit"
+                              class="btn btn-sm btn-danger"
+                              onclick="return confirm('Yakin ingin menghapus?')">
+                        Hapus
+                      </button>
+                    </form>
+                  </td>
+                </tr>
+              @endforeach
+            </tbody>
+          </table>
 
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
   </main><!-- End #main -->
 
